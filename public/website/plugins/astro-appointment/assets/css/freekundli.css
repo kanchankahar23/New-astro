@@ -1,0 +1,491 @@
+#astrologom {
+    animation: spin 4s infinite linear;
+    /* animation: rotation 2s infinite linear; */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    width: 180px;
+    display: none;
+    position: absolute;
+    left: 0;
+    /* background-color: white; */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: rgb(25, 25, 25) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black !important;
+}
+
+/* Position the dropdown content */
+.dropdown-content {
+    right: 0;
+}
+
+/* ************************** Ravi Css ***************************** */
+
+.rr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    cursor: pointer;
+}
+
+.rr-appointment-card {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 210px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s,
+    background-color 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rr-appointment-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0)
+    );
+    transition: left 0.5s;
+}
+
+.rr-appointment-card:hover::before {
+    left: 100%;
+}
+
+.rr-appointment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0e68c;
+}
+
+.rr-astrologer-photo {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    animation: photoFadeIn 1.5s ease-in-out;
+}
+
+@keyframes photoFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.rr-appointment-card:hover .rr-astrologer-photo {
+    transform: scale(1.1);
+}
+
+.rr-astrologer-name {
+    font-size: 1rem;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 1;
+    animation: textFadeIn 2s ease-in-out;
+    padding: 5px;
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+hr {
+    background-color: #ffffff;
+    border: none;
+    border-top: 2px solid rgb(247 31 31);
+    margin: 12px 0;
+}
+.rr-appointment-details p {
+    font-size: 17px;
+    color: #524d49;
+    display: block;
+    margin: -6px 0 -8px 0;
+    font-family: "Philosopher", sans-serif;
+    transition: color 0.3s;
+    display: flex;
+    animation: textFadeIn 2s ease-in-out;
+    align-items: center;
+    justify-content: space-around;
+}
+.rr-appointment-details p span{
+    cursor: pointer;
+    width: 30%;
+ }
+.rr-appointment-details p span i {
+    transition: all 400ms ease-in-out;
+    color: #522469;
+}
+.rr-appointment-details p span:hover .fa-phone {
+    transform: scale(1.2);
+    /* color: #3dd80e; */
+}
+.rr-appointment-details p span:hover .fa-rocketchat {
+    transform: scale(1.2);
+    /* color: #0c11dc; */
+}
+.rr-appointment-details p span:hover .fa-video {
+    transform: scale(1.2);
+    /* color: #d20c0c; */
+}
+
+.rr-appointment-card:hover .rr-appointment-details p {
+    color: #333333;
+}
+
+/* .label {
+    rotate: 42deg;
+    position: absolute;
+    left: 66%;
+    rotate: 10de;
+    height: 46px;
+    width: 180px;
+    background: #f71f1f;
+} */
+.label {
+rotate: 42deg;
+position: absolute;
+left: 63%;
+top: 3%;
+rotate: 10de;
+align-items: center;
+justify-content: center;
+display: flex;
+height: 25px;
+width: 101px;
+background: #791878;
+}
+.PremiumCards{
+    font-size: 0.6rem !important;
+    width: 100%;
+    font-weight: 400 !important;
+    font-family: "Poppins", sans-serif;
+    color: white !important;
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+.ss-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-image: url(https://astro-buddy.com/website/uploads/sites/3/2021/08/astrology-banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ss-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.professional {
+    color: white;
+    font-size: 38px;
+    padding-bottom: 12px;
+}
+.your-sign {
+    color: white;
+    font-size: 24px;
+    padding-bottom: 6px;
+}
+.luck {
+    color: white;
+}
+
+.ss-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 4px solid white !important;
+}
+
+.ss-circle {
+    width: 50vw; /* Changed to responsive unit */
+    height: 50vw; /* Changed to responsive unit */
+    max-width: 500px; /* Ensures it doesn't get too large */
+    max-height: 500px; /* Ensures it doesn't get too large */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ss-chakra-image {
+    width: 100%; /* Responsive to circle size */
+    height: 100%; /* Responsive to circle size */
+    position: absolute;
+    animation: rotate 5s linear infinite;
+}
+
+.ss-pandit-image {
+    width: 80%; /* Responsive to circle size */
+    height: auto; /* Maintains aspect ratio */
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* ************************** Ravi Css ***************************** */
+
+.testimonial123-carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.testimonial123-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    /* Adjusted width */
+}
+
+.testimonial123-carousel-item {
+    position: absolute;
+    min-width: 450px;
+    width: 100px;
+    background: #fbe216;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.testimonial123-carousel-item.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.testimonial123-carousel-item.left {
+    transform: translateX(-300px) scale(0.8);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.testimonial123-carousel-item.right {
+    transform: translateX(300px) scale(0.8);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.testimonial123-img-area {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #ff7010;
+}
+
+.testimonial123-img-area img {
+    width: 100%;
+}
+
+.testimonial123-content p {
+    color: #262626;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.testimonial123-content h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+}
+
+.testimonial123-content h5 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin: 7px 0;
+    color: #ff7010;
+}
+
+.testimonial123-content i {
+    color: #ff7010;
+}
+
+.testimonial123-stars {
+    margin-top: 10px;
+}
+
+/* Styling for carousel navigation buttons */
+.testimonial123-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff7010;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial123-prev-button {
+    left: 10px;
+    /* Adjusted to be closer to the carousel */
+}
+
+.testimonial123-next-button {
+    right: 10px;
+    /* Adjusted to be closer to the carousel */
+}
+
+.first-section {
+    /* position: absolute; */
+    background-image: url("https://astro-buddy.com/website/uploads/sites/3/2021/08/astrology-banner.jpg");
+    height: 94vh;
+    background-size: cover;
+}
+
+.contain {
+    position: relative;
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+}
+
+.chakra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: rotateChakra 12s linear infinite; /* Makes the chakra rotate */
+}
+
+.panditjii {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the Panditji over the chakra */
+    z-index: 2;
+}
+
+.panditjii img {
+    width: 100%;
+}
+
+.pandit-profil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rotateChakra {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.your-sign {
+    padding-left: 20%;
+}
+
+.professional {
+    padding-left: 20%;
+}
+
+.luck {
+    padding-left: 20%;
+}

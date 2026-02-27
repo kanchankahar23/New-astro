@@ -1,0 +1,251 @@
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.hide {
+    display: none;
+}
+
+.moc_chat_win .moc_chat_register>h3 {
+    padding: 10px 15px;
+    background-color: #151515;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+
+.moc_chat_win .moc_chat_register>.moc_chat_register_inner {
+    padding: 15px;
+}
+
+.moc_chat_win .moc_chat_register>.moc_chat_register_inner>p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #565656;
+}
+
+.moc_chat_win .moc_input {
+    margin-bottom: 15px;
+}
+
+.moc_chat_win .moc_input>label {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #151515;
+    font-weight: 400;
+}
+
+.moc_chat_win .moc_input>textarea,
+.moc_chat_win .moc_input>input {
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid #cccccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+.moc_chat_win .moc_input>textarea:focus,
+.moc_chat_win .moc_input>input[type="text"]:focus {
+    border-color: #151515;
+}
+
+.moc_chat_win .moc_btn {
+    padding: 8px 15px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #151515;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.moc_chat_win .moc_btn:hover,
+.moc_btn:focus {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.moc_chat_win .moc_chat_wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.moc_chat_win .moc_chat_wrapper>.moc_chat_inner>.moc_chat_header {
+    padding: 10px;
+    background-color: #151515;
+}
+
+.moc_chat_win .moc_chat_wrapper>.moc_chat_inner>.moc_chat_header>.moc_chat_title {
+    color: #ffffff;
+}
+
+.moc_chat_win .moc_chat_wrapper>.moc_chat_inner>.moc_chat_header>.moc_close_window {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.moc_chat_win .moc_chat_wrapper>.moc_chat_inner>.moc_chat_body {
+    min-height: 300px;
+    position: relative;
+}
+
+.moc_chat_win .moc_chat_wrapper>.moc_chat_inner>.moc_chat_footer {
+    border: 1px solid #ccc;
+}
+
+.moc_chat_win .moc_reply>input {
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.moc_chat_win .moc_chat_content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+    padding-bottom: 18px;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item {
+    padding-top: 10px;
+    max-width: 70%;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item>.moc_message {
+    display: flex;
+    align-items: flex-end;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item>.moc_message>.moc_chat_user {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item>.moc_message>.moc_chat_user>label {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #455A64;
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item>.moc_message>.moc_chat_text {
+    width: calc(100% - 30px);
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item>.moc_message>.moc_chat_text>p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 13px;
+    color: #3a3a3a;
+    border: 1px solid #e0e0e0;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item.sender {
+    align-self: flex-end;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item.sender .moc_message {
+    flex-direction: row-reverse;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item.sender>.moc_message>.moc_chat_text>p {
+    background-color: #151515;
+    color: #ffffff;
+    border-color: #151515;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.moc_chat_win .moc_chat_content>.moc_chat_item.sender>.moc_message>.moc_chat_user {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.moc_user_typing {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    font-size: 11px;
+    right: 0;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.moc_error_msg {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.moc_chat_win .moc_chat_register>.moc_chat_register_inner {
+    padding: 40px 15px 15px 15px;
+}
+
+.moc-start-chat-icon-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+}
+
+moc-start-chat-icon-wrapper span {
+    color: black;
+}
+
+span#hide,
+span#show {
+    color: black;
+}

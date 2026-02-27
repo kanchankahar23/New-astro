@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.slogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+.backbtn{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+.backbtn i{
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.backbtn button{
+background: #ff7010;
+color: white;
+width: 90px;
+height: 30px;
+border: none;
+border-radius: 2px;
+font-size: 15px;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+padding-left: 10px;
+cursor: pointer;
+}
+.bigimg{
+ width: 68%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: rgba(0, 0, 0, 0.6)  url('./image/personBg.png');
+ background-size: cover;
+ background-blend-mode: darken;
+}
+.astronamelogo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circleimg{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.circleimg img{
+    width: 100%;
+    animation: rotate 5s linear 0s infinite forwards;
+}
+
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
+  }
+
+.textlogo{
+    width: 250px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.textlogo img{
+width: 100%;
+}
+.yourdecision{
+    width: 100%;
+}
+.yourdecision p{
+    text-align: center;
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0px auto;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-right: 8px;
+}
+
+.forminput{
+    width: 32%;
+    height: 100vh;
+    background-color:  rgb(249, 246, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.alldetails{
+    width: 100%;
+    height: 68%;
+    /* background: rgb(255 255 255 / 92%) url(./image/astro_circle_bg.png);
+    background-size: contain;
+    background-blend-mode: lighten; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:1;
+    transform: translate(-50%, -50%);
+}
+.alldetails img{
+    animation: rotate 10s linear 0s infinite forwards;
+width: 100%;
+opacity: 0.1;
+}
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
+  }
+  .headinglog{
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: 20px !important;
+  }
+  .headinglog img{
+    width: 100%;
+    margin: 10px auto;
+  }
+  .headinglog{
+        width: 100%;
+        margin: 10px auto;
+  }
+  .headinglog p{
+width: 100%;
+text-align: center;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+color: rgb(61, 61, 61);
+margin: 0px auto;
+text-transform: uppercase;
+font-size: 18px;
+  }
+  .filldetails{
+    display: flex;
+    align-items: center;
+    width: 73%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: grey 0px 0px 10px -7px;
+    border-radius: 2px;
+    border-bottom: 2.3px solid rgb(255, 133, 51);
+    gap: 0px !important;
+    margin: 10px auto;
+    z-index: 1;
+  }
+  .filldetails input{
+    all: unset;
+    flex-grow: 1;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    max-width: calc(100% - 16px);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 12px 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  .submitbtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .submitbtn a{
+    width: 100%;
+    text-decoration: none;
+  }
+  .submitbtn a button{
+    background-color: rgb(255, 112, 16);
+    width: 72%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px 0px;
+    border: none;
+    margin: 20px auto;
+    margin-bottom: 5px !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+   cursor: pointer;
+  }
+  .goregister{
+    width: 100%;
+    cursor: pointer;
+  }
+  .goregister a{
+    width: 100%;
+    text-decoration: none;
+  }
+  .goregister a p{
+    color: #ff7010;
+    font-weight: 600;
+    font-size: 14px;
+    margin-block: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }

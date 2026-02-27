@@ -1,0 +1,129 @@
+/* body {
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    padding: 2rem;
+} */
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* Base styles for the tabs block */
+.tabs {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.tabs__labels {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+/* Hide radio inputs */
+.tabs__input {
+    display: none;
+}
+
+/* Style labels (tab buttons) */
+.tabs__label {
+    display: block;
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.tabs__label span {
+    display: block;
+    font-size: .65em;
+    text-transform: uppercase;
+    margin-top: .25rem;
+}
+
+.tabs__label:hover {
+    background-color: #f1f1f1;
+}
+
+/* Highlight active tab */
+#tab-1:checked~.tabs__labels label[for="tab-1"],
+#tab-2:checked~.tabs__labels label[for="tab-2"],
+#tab-3:checked~.tabs__labels label[for="tab-3"] {
+    background-color: #fff;
+    border-bottom: 2px solid #FFC107;
+}
+
+/* Content container */
+.tabs__content {
+    padding: 2.5rem 1.5rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Panels (content for each tab) */
+.tabs__panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+    columns: 3;
+    column-width: 3000px;
+    column-gap: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tabs__panel-image {
+    margin-bottom: 2rem;
+}
+
+/* Show the active tab's content */
+#tab-1:checked~.tabs__content #tab-panel-1,
+#tab-2:checked~.tabs__content #tab-panel-2,
+#tab-3:checked~.tabs__content #tab-panel-3 {
+    display: block;
+}
+@media (max-width: 768px) {
+    .tabs__content {
+            padding: 0.5rem 0.5rem;
+            background-color: #fff;
+            width: 100%;
+           }
+           .row {
+    margin-right: -33px;
+    margin-left: -33px;
+}
+}
+@media (max-width: 480) {
+    .tabs__content {
+            padding: 0.5rem 0.5rem;
+            background-color: #fff;
+            width: 100%;   }
+            .row {
+    margin-right: -33px;
+    margin-left: -33px;
+}
+}

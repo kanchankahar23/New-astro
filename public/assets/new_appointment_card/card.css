@@ -1,0 +1,381 @@
+.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+    background: #ff0404 !important;
+    font-size: 0.7rem !important;
+}
+.appointments-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* padding: 0px 20px; */
+}
+    .time-badge {
+        line-height: 2 !important;
+        background: #0daf6e !important;
+    }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.appointment-card {
+    width: 32%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.appointment-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.appointment-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.appointment-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 15px;
+}
+
+.user-role {
+    font-size: 12px;
+    color: #718096;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.blue {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.btn.blue:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-5px);
+    animation: fadeInUp 0.4s forwards;
+}
+
+.appointment-card:nth-child(1) .status {
+    animation-delay: 0.1s;
+}
+
+.appointment-card:nth-child(2) .status {
+    animation-delay: 0.3s;
+}
+
+.appointment-card:nth-child(3) .status {
+    animation-delay: 0.5s;
+}
+
+.status.approved {
+    background-color: #10b981;
+}
+
+.status.pending {
+    background-color: #f59e0b;
+}
+
+.status.cancelled {
+    background-color: #ef4444;
+}
+
+.card-body {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+thead th {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #64748b;
+    font-size: 13px;
+}
+
+tbody td {
+    color: #475569;
+    font-weight: 500;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #64748b;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.call-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: transform 0.2s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.appointment-card:nth-child(1) .call-option {
+    animation-delay: 0.2s;
+}
+
+.appointment-card:nth-child(2) .call-option {
+    animation-delay: 0.4s;
+}
+
+.appointment-card:nth-child(3) .call-option {
+    animation-delay: 0.6s;
+}
+
+.call-option:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.time-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-part {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s forwards;
+    font-size: 9px;
+}
+
+.appointment-card:nth-child(1) .time-part {
+    animation-delay: 0.3s;
+}
+
+.appointment-card:nth-child(2) .time-part {
+    animation-delay: 0.5s;
+}
+
+.appointment-card:nth-child(3) .time-part {
+    animation-delay: 0.7s;
+}
+
+.video-call {
+    color: #ef4444;
+}
+
+.phone-call {
+    color: #10b981;
+}
+
+.chat {
+    color: #0ea5e9;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .appointment-card {
+            padding: 1rem;
+            width: 47%;
+        }
+
+}
+
+@media (max-width: 768px) {
+    .appointments-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .call-option {
+        font-size: 9px;
+    }
+
+    .time-info {
+        font-size: 9px;
+    }
+
+    .badge {
+        font-size: 0.6rem;
+        font-weight: 500;
+
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .status {
+        font-size: 10px !important;
+    }
+
+    .user-details {
+        width: 120px;
+    }
+
+    .pagination {
+        overflow: scroll;
+    }
+
+    .appointment-card {
+        padding: 1rem;
+        width: 46%
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pagination {
+        overflow: scroll;
+    }
+
+    .user-details {
+        width: 120px;
+    }
+
+    .status {
+        font-size: 10px !important;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .badge {
+        font-size: 0.6rem;
+        font-weight: 500;
+
+    }
+
+    .call-option {
+        font-size: 9px;
+    }
+
+    .time-info {
+        font-size: 9px;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .appointment-card {
+        padding: 1rem;
+        width: 100%
+    }
+
+    .appointment-card:hover {
+        animation: bounce 0.6s ease;
+    }
+
+    /* @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+    } */
+
+}

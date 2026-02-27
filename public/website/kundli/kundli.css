@@ -1,0 +1,303 @@
+.nav-link.active {
+      background-color: #ccc;
+  }
+
+  .nav-pills .nav-link {
+      color: #555;
+      font-family: 'poppins', sans-serif;
+  }
+
+  .text-uppercase {
+      letter-spacing: 0.1em;
+  }
+
+  ol li,
+  ul li {
+      margin-bottom: 0px;
+  }
+
+  .tableliner {
+      width: 95%;
+      margin: 40px auto;
+  }
+
+.tab-betail .nav-tabs {
+      border-bottom: 0px solid #dee2e6;
+  }
+
+  .tab-betail .nav {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+  }
+
+  .tab-betail .nav-tabs .nav-item {
+      margin-bottom: 0px;
+  }
+
+  .tab-betail .nav-tabs .nav-item.show .nav-link,
+  .tab-betail .nav-tabs .nav-link.active {
+      color: #ffffff;
+      background-color: #fbe216;
+      border-color: #fbe216;
+  }
+
+  .tab-betail .nav-tabs .nav-link:hover {
+      color: #ffffff;
+      background-color: #f9a72e;
+      border-color: #fbe216;
+  }
+
+  .tab-betail .nav-tabs .nav-link {
+      border: 1px solid #fff;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-radius: 10px;
+      color: #000;
+      background-color: #f0f0ec78;
+      box-shadow: 0px 1px 3px #ddd;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.5s;
+  }
+
+  .slider-tabs .tab-betail .nav,
+  .panchang-datail-sec .tab-betail .nav {
+      margin: 20px 0px;
+      overflow-x: auto;
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      overflow-y: hidden;
+      flex-wrap: unset;
+  }
+
+  .slider-tabs .nav-tabs .nav-link {
+      border: 1px solid #fff;
+      color: #000;
+      background-color: transparent;
+      box-shadow: 0px 0px 0px #fbe216;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.5s;
+      border: 1px solid #fbe216;
+      margin-bottom: 1px;
+  }
+
+
+  /* Preloader styles */
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: blur;
+      /* Semi-transparent white */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      backdrop-filter: blur(10px);
+  }
+
+  .as_loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .as_loader img {
+      animation: spin 7s infinite linear;
+      -webkit-animation: spin 7s infinite linear;
+      -moz-animation: spin 7s infinite linear;
+  }
+
+  .as_loader img {
+      animation: spin 7s infinite linear;
+      -webkit-animation: spin 7s infinite linear;
+      -moz-animation: spin 7s infinite linear;
+  }
+
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  .rot {
+      animation: spin 8s infinite;
+  }
+
+/* Personal Charactersticks  */
+
+ .progress {
+     height: 30px;
+     margin-top: 20px;
+ }
+
+ .progress-bar {
+     font-size: 0.8rem;
+     font-weight: 600;
+ }
+
+ .bg-danger {
+     background-color: #dc3545 !important;
+ }
+
+ .bg-success {
+     background-color: #ffc107 !important;
+ }
+
+  #astrologom {
+      animation: spin 9s infinite linear;
+  }
+
+  @keyframes spin {
+      from {
+          transform: rotate(0deg);
+      }
+
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+  .kundlitag {
+      color: #fbe216 !important;
+      ;
+  }
+
+  .kundlidetailsfirst {
+      float: left;
+      width: 100%;
+      position: relative;
+      background-color: #111111;
+      z-index: 1;
+      background-image: url('https://hips.hearstapps.com/hmg-prod/images/solar-system-royalty-free-image-1649969440.jpg?crop=1xw:0.75xh;center,top&resize=1200:*');
+      background-size: cover;
+      margin-bottom: 70px;
+  }
+
+  .appointment {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 0;
+  }
+
+  .tableliner {
+      width: 90%;
+      margin: 40px auto;
+  }
+
+  table,
+  th,
+  td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+
+  th,
+  td {
+      padding: 20px;
+  }
+
+ .tableliner table {
+     margin-top: 11px !important;
+ }
+
+   :root {
+       --font-fam: "Satoshi", sans-serif;
+       --text-color: #212529;
+       --bar-color: #36f31d;
+       --transition-effect: all 90ms linear;
+   }
+
+   /* table */
+
+        .wrap {
+            margin: 500px;
+        }
+
+        #text {
+            font-family: var(--font-fam);
+            color: var(--text-color);
+            font-size: 20px;
+            padding: 0 10px;
+
+            font-weight: 500;
+        }
+
+        #percent {
+            border: 1px solid black;
+            font-family: var(--font-fam);
+            color: var(--text-color);
+            transition: var(--transition-effect);
+            font-size: 16px;
+            padding: 0 10px;
+            font-weight: 500;
+        }
+
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+         table thead th,
+         table th {
+             color: var(--al-black);
+             background: var(--al-primary-color);
+         }
+
+
+         .table-wrap {
+             margin: 10px;
+             border-radius: 10px;
+
+         }
+
+
+
+         th {
+             text-align: inherit;
+         }
+
+         label {
+             display: inline-block;
+             margin-bottom: 0.5rem;
+         }
+
+         .table {
+             width: 100%;
+             color: #212529;
+         }
+
+         .custom-list {
+             list-style-type: disc;
+             margin-left: 20px;
+             margin-top: 10px;
+         }
+  .table-wrap {
+      margin: 10px;
+      /* border: 1px solid rgba(0, 0, 0, 0.425); */
+      border-radius: 10px;
+  }
+ .kundlitag {
+     color: #fbe216 !important;
+     ;
+ }
+
+

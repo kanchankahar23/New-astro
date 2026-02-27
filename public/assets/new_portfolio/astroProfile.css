@@ -1,0 +1,4059 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    background-color: transparent;
+    background-image: linear-gradient(232deg, #cacf94 0%, #40434a 71.93%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* required for ::before positioning */
+    overflow: hidden;
+}
+
+.profile::before {
+    content: "";
+    /* mandatory */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('./proImages/Grid.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 0;
+    /* keeps it behind content */
+}
+
+.profile>* {
+    position: relative;
+    z-index: 1;
+    /* ensures text/content appears above ::before */
+}
+
+
+.astroProfile {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.AStroImage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2%;
+    position: relative;
+}
+
+.addAstroImage {
+    width: 480px;
+    height: 495px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #53544b8f;
+    overflow: hidden;
+}
+
+.addAstroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.contentText h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #eacc1d;
+}
+
+
+.contentText h1 {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Philosopher", sans-serif;
+    font-weight: 600;
+    font-size: 3.25rem;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+.contentText p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: white;
+    width: 90%;
+}
+
+.leftImageBox {
+    position: absolute;
+    left: -7%;
+    top: 10%;
+    background-color: white;
+    width: 228px;
+    height: 82px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 16px #1f202154;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 2%;
+    animation: processingmoveobject 1500ms infinite linear alternate;
+}
+
+@keyframes processingmoveobject {
+    0% {
+        left: -3%;
+    }
+
+    100% {
+        left: 2%;
+        /* adjust how far you want it to move */
+    }
+}
+
+
+
+.rightImageBox {
+    position: absolute;
+    right: -16%;
+    bottom: 10%;
+    background-color: white;
+    width: 242px;
+    height: 87px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 16px #1f202154;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookAppointment {
+    width: 90%;
+}
+
+.bookAppointment button {
+    font-family: "Poppins", sans-serif;
+    background-color: #eacc1d;
+    font-weight: 500;
+    color: black;
+    border-radius: 6px 6px 6px 6px;
+    padding: 16px 30px 16px 30px;
+    font-size: 16px;
+    margin-top: 9%;
+    border: none;
+    margin-left: -3px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px #333539;
+    transition: all 400ms ease-in-out;
+}
+
+.bookAppointment button:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.1);
+}
+
+.loginItem {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(234, 204, 29);
+    font-weight: 500;
+    color: #000000 !important;
+    border-radius: 3px;
+    padding: 7px 31px;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgb(44 45 49 / 8%) 1px 1px 5px;
+}
+
+.leftImageBox h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1c1c1f;
+    /* margin-top: 10px; */
+    text-align: left;
+    width: 80%;
+    padding-left: 20%;
+}
+
+.leftImageBox span {
+    font-family: "Montserrat", sans-serif;
+    /* font-family: Poppins, sans-serif; */
+    position: absolute;
+    top: -29%;
+    left: 5%;
+    background-color: #2b2b31;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 54px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftImageBox i {
+    position: absolute;
+    bottom: 22%;
+    /* bottom: 7%; */
+    right: 3%;
+    left: 9%;
+    font-size: 2rem;
+    color: #2b2b3147;
+}
+
+.rightImageBox h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1c1c1f;
+    /* margin-top: 10px; */
+    text-align: left;
+    width: 80%;
+}
+
+.rightImageBox i {
+    position: absolute;
+    top: -1%;
+    right: 2%;
+    transform: rotate(-80deg);
+    font-size: 2.7rem;
+    color: #2b2b3147;
+}
+
+/* second section start  */
+
+.secondcontainer {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.aboutAstrologer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.astroProfilePic {
+    width: 50%;
+    position: relative;
+}
+
+.imageContainer {
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px #9b9ba052;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imglowerBox {
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+    width: 60%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.15);
+}
+
+.imglowerBox h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1c1c1f;
+    margin-left: 15px;
+}
+
+.lineDraw {
+    background-color: #eacc1d;
+    width: 10px;
+    height: 85%;
+}
+
+.textMatter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 5%; */
+}
+
+.textMatter h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.textMatter h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.35rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    color: #18181d;
+
+}
+
+.unlock {
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    color: #1f1f22;
+    font-weight: 400;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.twoPoints {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.leftPara {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.leftPara span {
+    position: absolute;
+    top: -15%;
+    left: -2%;
+    background-color: #a8a88e;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPara span i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.leftPara h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 22%;
+}
+
+.leftPara p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    color: #1f1f22;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.rightPara {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rightPara h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 22%;
+}
+
+.rightPara p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    color: #1f1f22;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.rightPara span {
+    position: absolute;
+    top: -15%;
+    left: -2%;
+    background-color: #a8a88e;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightPara span i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.callandVideo {
+    width: 100%;
+    /* background-color: #fafaf8; */
+    background-color: #f4f4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chatServices {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.allOneContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.callNow h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: left;
+    color: #4b4c59;
+    margin-left: 25px;
+}
+
+.Videocall h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: left;
+    color: #4b4c59;
+    margin-left: 25px;
+}
+
+.ChatUs h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: left;
+    color: #4b4c59;
+    margin-left: 25px;
+}
+
+.callNow i {
+    font-size: 2.2rem;
+    color: #4b4c59;
+}
+
+.Videocall i {
+    font-size: 2.2rem;
+    color: #4b4c59;
+}
+
+.ChatUs i {
+    font-size: 2.2rem;
+    color: #4b4c59;
+}
+
+
+/* Gallery section start  */
+
+.overAreas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 60px auto;
+}
+
+.WorlWideServe {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.WorlWideServe {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.ourServiceText h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ourServiceText h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: #18181d;
+    line-height: 1.3em;
+    margin-top: 8px;
+    margin-bottom: 3.5%;
+}
+
+.headingOfSect {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.sixCountries {
+    width: 27%;
+    height: 320px;
+    overflow: hidden;
+    margin: 20px 2%;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.sixCountries:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.sixCountries::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    border-radius: 50px;
+}
+
+.sixCountries img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.overlayOnPic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0) 13.02%, rgb(0 0 0 / 8%) 42.5%, rgb(0 0 0 / 37%) 70%, #141618e0 100%);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.nameOfCountry {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+}
+
+.nameOfCountry h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    width: 80%;
+    margin: 0px auto;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    z-index: 2;
+}
+
+.sixCountries:hover {
+    border-radius: 50px;
+}
+
+/* services section start  */
+
+
+.servicesShow {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fafaf8; */
+    background-color: #f4f4f5;
+    position: relative;
+}
+
+.uppertextHeading {
+    width: 85%;
+    margin: -5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.uppertextHeading h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.uppertextHeading h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: #18181d;
+    line-height: 1.3em;
+    margin-top: 8px;
+    margin-bottom: 3.5%;
+}
+
+.cardsViewsection {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.multipleServices {
+    position: relative;
+    overflow: hidden;
+    width: 295px;
+    margin: 20px 0;
+    display: flex;
+    height: 364px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 17px 17px 21px 18px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.039);
+    border: 1px solid #f2f2ec;
+    border-radius: 30px 30px 30px 0px;
+    background-color: white;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+
+.multipleServices::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    /* background-color: #282936; */
+    background-image: linear-gradient(232deg, #3f4861 0%, #232135 71.93%);
+
+    z-index: 0;
+    transition: bottom 0.5s ease;
+    border-radius: 30px 30px 30px 0px;
+}
+
+
+.multipleServices:hover::before {
+    bottom: 0;
+}
+
+
+.multipleServices * {
+    position: relative;
+    z-index: 1;
+}
+
+.multipleServices:hover .astroicons {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.multipleServices:hover .colorIcon {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.iconofAStro {
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 15px;
+}
+
+.astroicons {
+    width: 70px;
+    height: 70px;
+    /* background-color: #212229; */
+    background-color: #f4f4f5;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorIcon {
+    width: 70px;
+    height: 70px;
+    /* background-color: #383941; */
+    background-color: #f4f4f5;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.astroicons svg {
+    width: 80%;
+    /* color: white; */
+    color: #26272b;
+}
+
+.astroicons i {
+    font-size: 2rem;
+    /* color: white; */
+    color: #26272b;
+}
+
+.colorIcon i {
+    font-size: 2rem;
+    /* color: white; */
+    color: #26272b;
+}
+
+.multipleServices:hover .astroicons svg,
+.multipleServices:hover .colorIcon i,
+.multipleServices:hover .astroicons i {
+    color: #282936;
+    transition: color 0.5s ease;
+}
+
+.multipleServices:hover .subHeadingPara p {
+    color: #ffffff;
+    transition: color 0.5s ease;
+}
+
+.multipleServices:hover .subHeadingPara h3 {
+    color: #ffffff;
+    transition: color 0.5s ease;
+}
+
+.multipleServices:hover .learnButton a button {
+    color: #ffffff;
+    transition: color 0.5s ease;
+}
+
+.multipleServices:hover .learnButton a button i {
+    transform: rotate(45deg) scale(1.1);
+    /* margin-left: 5px; */
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.subHeadingPara {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.subHeadingPara h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+}
+
+.subHeadingPara p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.85rem;
+    color: #2f2f31;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+    width: 100%;
+    line-height: 1.7em;
+}
+
+.swiper {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.lowerImage {
+    position: absolute;
+    bottom: -1%;
+    width: 100%;
+}
+
+.lowerImage img {
+    width: 100%;
+}
+
+.swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+    color: #000000;
+}
+
+.multipleServices hr {
+    width: 90%;
+    height: 0.5px;
+    background-color: #cacacac2;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.learnButton {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+}
+
+.learnButton a button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #91914c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.learnButton a button i {
+    transition: transform 0.4s ease;
+}
+
+/* why choose us section start  */
+
+.whyChoose {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.chooseUs {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.newWay {
+    background: url(./proImages/BG-shape.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.04;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 14%;
+    width: 42%;
+    height: 80%;
+}
+
+.rareClass {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rareClass h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.rareClass h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: #18181d;
+    line-height: 1.3em;
+    margin-top: 8px;
+    margin-bottom: 1%;
+}
+
+.rareClass p {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    color: #2f2f31;
+    font-weight: 400;
+    width: 55%;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.fiveElement {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+
+.fiveElement hr {
+    width: 1px;
+    height: 150px;
+    background: #d9dcd8;
+    border: none;
+}
+
+.firstElement {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    background: white;
+    padding: 40px 18px;
+    margin: 0 5px;
+}
+
+.millionImg {
+    /* width: 100%; */
+    overflow: hidden;
+    width: 70px;
+    display: flex;
+    border-radius: 50%;
+    height: 70px;
+    /* background-color: #a8a88e; */
+    background-image: linear-gradient(232deg, #51586a 0%, #373547 71.93%);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.millionImg i {
+    font-weight: 900;
+    color: white;
+    font-size: 2.1rem;
+}
+
+.firstElement h3 {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    color: #1c1c1f;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.firstElement p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.85rem;
+    color: #2f2f31;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.bigLineBG {
+    width: 93%;
+    height: 0.8px;
+    background: #d9dcd8;
+    border: none;
+}
+
+.overView {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.globalReach {
+    width: 20%;
+    /* border: 1px solid black; */
+    background: white;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.globalReach h3 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #6d6d2c;
+}
+
+.globalReach p {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    color: #2f2f31;
+    font-weight: 400;
+}
+
+.warriousLine {
+    width: 1px;
+    height: 74px;
+    background: #d9dcd8;
+    border: none;
+}
+
+/* testimonial section start  */
+
+
+.astrologerTestimonial {
+    width: 100%;
+    background-color: transparent;
+    /* background-image: linear-gradient(232deg, #cacf94 0%, #40434a 71.93%); */
+    background-image: linear-gradient(232deg, #3f4861 0%, #232135 71.93%);
+
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    height: 72vh;
+    justify-content: end;
+    position: relative;
+}
+
+.astrologerTestimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./proImages/Grid.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.userExperience {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.leftUserHeading {
+    width: 30%;
+    color: white;
+}
+
+.leftUserHeading h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.leftUserHeading h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.3em;
+    margin-top: 16px;
+}
+
+.slider-container {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.whiteReview {
+    flex: 0 0 570px;
+    margin-right: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 50px 42px;
+    height: 262px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* .whiteReview:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+ background-image: -webkit-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(166 166 140) 100%);
+} */
+
+.reviewPara p {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    color: #2f2f31;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+    width: 100%;
+    line-height: 1.7em;
+}
+
+.starRating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 76%;
+}
+
+.userName h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    color: #1c1c1f;
+    margin-bottom: 4px;
+}
+
+.userName p {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #2f2f31;
+    font-weight: 400;
+}
+
+.starShow i {
+    color: #a8a88e;
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+
+.UserProfileView {
+    position: absolute;
+    bottom: 13%;
+    right: 8%;
+    border: 0px solid #a8a88e;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.UserProfileView img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slidesButton {
+    width: 90%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    /* background: #1e1f268c;
+    color: #fff; */
+    background: #ffffff2b;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 400ms ease-in-out;
+}
+
+.prev {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    color: #121213;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 400ms ease-in-out;
+}
+
+.prev:hover {
+    transform: translate(1.1);
+    transform: translateY(-50%);
+    background: #1e1f268c;
+    color: white;
+}
+
+.next:hover {
+    transform: translate(1.1);
+    background: #ffffff;
+    color: #121213;
+
+}
+
+.prev {
+    left: 0%;
+}
+
+.next {
+    right: 71%;
+}
+
+/* gemsStones section start  */
+.addDivineSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f4f4f5;
+    position: relative;
+}
+
+.addNewlyImage {
+    width: 100%;
+    /* height: 400px; */
+    position: absolute;
+    bottom: -1%;
+    /* bottom: -10%; */
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.addNewlyImage img {
+    width: 100%;
+    /* background-size: cover; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.showheadingOfDivine {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.mergeDivine {
+    width: 90%;
+    margin: 60px auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.mergeDivine h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #91914c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mergeDivine h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: #18181d;
+    line-height: 1.3em;
+    margin-top: 8px;
+    margin-bottom: 1%;
+}
+
+.slidetheStones {
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gemsWarriusSections {
+    width: 23%;
+    height: 383px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.039);
+    border: 1px solid #f2f2ec;
+    border-radius: 12px 12px 30px 0px;
+    background-color: white;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.gemsImages {
+    width: 100%;
+    height: 222px;
+    overflow: hidden;
+}
+
+.gemsImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gemsInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.addCurve {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+}
+
+.addCurve img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gemsInfo h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    color: #1c1c1f;
+    color: #717141;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    z-index: 9;
+    text-align: center;
+}
+
+.gemsInfo p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.85rem;
+    color: #2f2f31;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+    width: 90%;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.visitWeb {
+    width: auto;
+    position: absolute;
+    bottom: -9%;
+    left: 43.6%;
+}
+
+.visitWeb a button {
+    font-family: "Poppins", sans-serif;
+    /* background-color: #27251f; */
+    font-weight: 500;
+    background: linear-gradient(232deg, #3f4861 0%, #232135 71.93%);
+    color: #ffffff;
+    border-radius: 6px 6px 6px 6px;
+    padding: 14px 43px 14px 43px;
+    font-size: 16px;
+    margin-top: 9%;
+    border: none;
+    margin-left: -3px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #d7d7d7;
+    transition: all 400ms ease-in-out;
+}
+
+
+.visitWeb a button:hover {
+    background: rgb(234, 204, 29) !important;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* footer start  */
+
+.footerimg {
+    width: 100%;
+    overflow: hidden;
+    height: 505px;
+    margin-bottom: 13px !important;
+    margin: 40px 0;
+    margin-top: 8%;
+}
+
+.footerimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Responsive CSS start  */
+
+@media only screen and (max-width: 500px) {
+    .profile {
+        height: 84svh;
+    }
+
+    .outerheader {
+        display: none;
+    }
+
+    .footerimg {
+        display: none;
+    }
+
+    .astroProfile {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+
+    .contentText {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 7% auto;
+        padding-left: 6%;
+    }
+
+    .contentText h4 {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: rgb(234, 204, 29);
+    }
+
+    .contentText h1 {
+        font-family: Philosopher, sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        color: white;
+        margin-top: 1%;
+        margin-bottom: 2.5%;
+    }
+
+    .contentText p {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: white;
+        width: 100%;
+        line-height: 1.15rem;
+        margin-top: 8px;
+    }
+
+    .bookAppointment button {
+        font-family: Poppins, sans-serif;
+        background-color: rgb(234, 204, 29);
+        font-weight: 500;
+        color: black;
+        border-radius: 6px;
+        padding: 11px 20px;
+        font-size: 0.85rem;
+        margin-top: 9%;
+        border: none;
+        margin-left: -3px;
+        cursor: pointer;
+        box-shadow: rgb(87 89 92 / 62%) 2px 2px 8px;
+        transition: 400ms ease-in-out;
+    }
+
+    .leftImageBox {
+        position: absolute;
+        top: 40% !important;
+        background-color: white;
+        width: 164px;
+        height: 60px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 3%;
+        animation: processingmoveobject 1500ms infinite linear alternate;
+    }
+
+    @keyframes processingmoveobject {
+        0% {
+            left: -5%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+
+
+    .leftImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 90%;
+        padding-left: 26%;
+    }
+
+    .leftImageBox span {
+        font-family: "Montserrat", sans-serif;
+        /* font-family: Poppins, sans-serif; */
+        position: absolute;
+        top: -29%;
+        left: 5%;
+        background-color: #2b2b31;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 39px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftImageBox i {
+        position: absolute;
+        bottom: 24%;
+        /* bottom: 7%; */
+        right: 3%;
+        left: 7%;
+        font-size: 1.5rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox {
+        position: absolute;
+        right: -9%;
+        bottom: 10%;
+        background-color: white;
+        width: 190px;
+        height: 54px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 80%;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .AStroImage {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .addAstroImage {
+        width: 90%;
+        height: auto;
+        max-height: 300px;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #53544b8f;
+        overflow: hidden;
+    }
+
+    .aboutAstrologer {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textMatter {
+        width: 100%;
+    }
+
+    .textMatter h1 {
+        font-size: 1.6rem;
+        line-height: 32px;
+    }
+
+    .unlock {
+        font-size: 0.85rem;
+    }
+
+    .leftPara {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .leftPara h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.97rem;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 18%;
+    }
+
+    .leftPara p {
+        margin-top: 5%;
+        font-size: 0.85rem;
+    }
+
+    .rightPara {
+        width: 100%;
+        margin-top: 12%;
+    }
+
+    .rightPara h2 {
+        font-size: 0.97rem;
+        padding-left: 18%;
+    }
+
+    .twoPoints {
+        flex-direction: column;
+    }
+
+    .rightPara p {
+        margin-top: 5%;
+        font-size: 0.85rem;
+    }
+
+    .imageContainer {
+        height: auto;
+        min-height: 302px;
+        max-height: 302px;
+        width: 100%;
+    }
+
+    .astroProfilePic {
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .imglowerBox {
+        width: 65%;
+        height: 80px;
+        padding: 6px 11px 6px 8px;
+    }
+
+    .imglowerBox h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: #1c1c1f;
+        margin-left: 15px;
+    }
+
+    .chatServices {
+        flex-direction: column;
+    }
+
+    .allOneContact {
+        justify-content: center;
+        width: 100%;
+        background: #f4f4f5 !important;
+        padding: 30px 0;
+    }
+
+    .callandVideo {
+        background-color: white !important;
+    }
+
+    .allOneContact i {
+        font-size: 1.4rem;
+        color: #4b4c59;
+    }
+
+    .allOneContact h2 {
+        font-size: 1.6rem;
+        margin-left: 3%;
+    }
+
+    .Videocall {
+        margin: 20px auto;
+    }
+
+    .chatServices {
+        width: 100%;
+    }
+
+    .ourServiceText h1 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .sixCountries {
+        width: 85%;
+        height: auto;
+        max-height: 310px;
+        min-height: 300px;
+    }
+
+    .nameOfCountry h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .uppertextHeading h1 {
+        font-size: 1.6rem;
+    }
+
+    .uppertextHeading {
+        margin-top: 29%;
+    }
+
+    .whyChoose {
+        height: auto;
+        margin-top: 31%;
+    }
+
+    .servicesShow {
+        height: 52vh;
+    }
+
+    .multipleServices {
+        width: 88% !important;
+        height: 350px !important;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subHeadingPara h3 {
+        font-size: 0.9rem;
+    }
+
+    .subHeadingPara h3 {
+        font-size: 0.9rem;
+    }
+
+    .learnButton a button {
+        font-size: 0.9rem;
+    }
+
+    .multipleServices {
+        width: 310px;
+        height: 346px;
+    }
+
+    .rareClass h1 {
+        font-size: 1.6rem;
+    }
+
+    .rareClass {
+        width: 100%;
+    }
+
+    .rareClass p {
+        font-size: 0.8rem;
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .firstElement {
+        width: 100%;
+    }
+
+    .firstElement h3 {
+        font-size: 0.9rem;
+    }
+
+
+    .firstElement p {
+        margin-top: 9px;
+    }
+
+    .millionImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .millionImg i {
+        font-weight: 900;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    .fiveElement hr {
+        width: 90%;
+        height: 1px;
+    }
+
+    .newWay {
+        top: 18% !important;
+        width: 100% !important;
+    }
+
+    .overView {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .globalReach {
+        width: 47%;
+    }
+
+    .globalReach h3 {
+        font-size: 1.5rem;
+    }
+
+    .globalReach p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .astrologerTestimonial {
+        height: auto;
+    }
+
+    .userExperience {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftUserHeading {
+        width: 90%;
+    }
+
+    .leftUserHeading h1 {
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .leftUserHeading h4 {
+        text-align: center;
+    }
+
+    .fa-arrow-left {
+        font-size: 0.9rem;
+    }
+
+    .fa-arrow-right {
+        font-size: 0.9rem;
+    }
+
+    .prev {
+        font-size: 20px;
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        font-size: 20px;
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slidesButton {
+        width: 100%;
+        margin-top: 8%;
+        margin-bottom: 13%;
+    }
+
+    .reviewPara p {
+        font-size: 13px;
+    }
+
+    .userName h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .userName p {
+        font-size: 12px;
+    }
+
+    .starShow i {
+        color: #a8a88e;
+        font-size: 11px;
+        margin-right: 0px;
+    }
+
+    .UserProfileView {
+        position: absolute;
+        bottom: 13%;
+        right: 8%;
+        border: 0px solid #a8a88e;
+        width: 65px;
+        height: 65px;
+    }
+
+    .whiteReview {
+        background-color: rgb(255, 255, 255);
+        padding: 6px 23px 16px;
+        height: 208px;
+        flex: 0 0 100%;
+        width: 100%;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .slider-container {
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mergeDivine {
+        width: 100%;
+        margin: 60px auto;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+
+    .mergeDivine h1 {
+        font-size: 1.6rem;
+        line-height: auto;
+    }
+
+    .slidetheStones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gemsInfo h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.87rem;
+        font-weight: 600;
+    }
+
+    .gemsInfo p {
+        font-size: 0.8rem;
+    }
+
+    .gemsWarriusSections {
+        width: 90%;
+        height: 357px;
+        margin: 30px auto;
+    }
+
+    .gemsWarriusSections {
+        width: 90%;
+        height: 357px;
+    }
+
+    .showheadingOfDivine {
+        margin-top: 23%;
+    }
+
+    .visitWeb {
+        width: auto;
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width:800px) {
+
+    .profile {
+        height: auto !important;
+    }
+
+    .outerheader {
+        display: none;
+    }
+
+    .footerimg {
+        display: none;
+    }
+
+    .astroProfile {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+
+    .contentText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 7% auto;
+        padding-left: 6%;
+    }
+
+    .contentText h4 {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: rgb(234, 204, 29);
+    }
+
+    .contentText h1 {
+        font-family: Philosopher, sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 1%;
+        margin-bottom: 2.5%;
+    }
+
+    .contentText p {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: white;
+        width: 100%;
+        line-height: 1.15rem;
+        margin-top: 8px;
+    }
+
+    .bookAppointment button {
+        font-family: Poppins, sans-serif;
+        background-color: rgb(234, 204, 29);
+        font-weight: 500;
+        color: black;
+        border-radius: 6px;
+        padding: 11px 20px;
+        font-size: 0.9rem;
+        margin-top: 9%;
+        border: none;
+        margin-left: -3px;
+        cursor: pointer;
+        box-shadow: rgb(87 89 92 / 62%) 2px 2px 8px;
+        transition: 400ms ease-in-out;
+    }
+
+    .leftImageBox {
+        position: absolute;
+        top: 40% !important;
+        background-color: white;
+        width: 200px;
+        height: 63px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 2%;
+        animation: processingmoveobject 1500ms infinite linear alternate;
+    }
+
+    @keyframes processingmoveobject {
+        0% {
+            left: -5%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+
+
+    .leftImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 90%;
+        padding-left: 26%;
+    }
+
+    .leftImageBox span {
+        font-family: "Montserrat", sans-serif;
+        /* font-family: Poppins, sans-serif; */
+        position: absolute;
+        top: -44%;
+        left: 5%;
+        background-color: #2b2b31;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 43px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftImageBox i {
+        position: absolute;
+        bottom: 24%;
+        /* bottom: 7%; */
+        right: 3%;
+        left: 7%;
+        font-size: 1.8rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox {
+        position: absolute;
+        right: -9%;
+        bottom: 10%;
+        background-color: white;
+        width: 210px;
+        height: 60px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 80%;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .AStroImage {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 5%;
+        margin-bottom: 11%;
+        position: relative;
+    }
+
+    .addAstroImage {
+        width: 90%;
+        height: auto;
+        max-height: 476px;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #53544b8f;
+        overflow: hidden;
+    }
+
+    .aboutAstrologer {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textMatter {
+        width: 100%;
+    }
+
+    .textMatter h4 {
+        font-size: 0.9rem;
+    }
+
+    .textMatter h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-top: 1%;
+    }
+
+    .unlock {
+        font-size: 0.9rem;
+    }
+
+    .leftPara {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .leftPara h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 24%;
+    }
+
+    .leftPara p {
+        margin-top: 6%;
+        font-size: 0.87rem;
+    }
+
+    .rightPara {
+        width: 48%;
+    }
+
+    .rightPara h2 {
+        font-size: 1rem;
+        padding-left: 24%;
+    }
+
+
+    .rightPara p {
+        margin-top: 5%;
+        font-size: 0.87rem;
+    }
+
+    .imageContainer {
+        height: auto;
+        min-height: 300px;
+        max-height: 538px;
+        width: 100%;
+    }
+
+    .astroProfilePic {
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .imglowerBox {
+        width: 60%;
+        height: 104px;
+        padding: 6px 11px 6px 8px;
+    }
+
+    .imglowerBox h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #1c1c1f;
+        margin-left: 15px;
+    }
+
+
+
+    .allOneContact {
+        justify-content: center;
+        width: 33%;
+    }
+
+
+
+    .allOneContact i {
+        font-size: 1.4rem;
+        color: #4b4c59;
+        margin-right: 2px;
+    }
+
+    .allOneContact h2 {
+        font-size: 1.6rem;
+        margin-left: 3%;
+    }
+
+    .chatServices {
+        width: 100%;
+        margin: 9px auto;
+    }
+
+    .ourServiceText h4 {
+        font-size: 0.9rem;
+    }
+
+    .ourServiceText h1 {
+        font-size: 2rem;
+    }
+
+    .sixCountries {
+        width: 45%;
+        height: auto;
+        max-height: 250px;
+        min-height: 210px;
+    }
+
+    .overAreas {
+        margin-bottom: -10%;
+    }
+
+    .nameOfCountry h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .uppertextHeading h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .uppertextHeading h1 {
+        font-size: 2rem;
+    }
+
+    .uppertextHeading {
+        margin-top: 29%;
+    }
+
+    .whyChoose {
+        height: auto;
+        margin-top: 31%;
+    }
+
+    .servicesShow {
+        height: 52vh;
+    }
+
+    .multipleServices {
+        width: 88% !important;
+        height: 350px !important;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subHeadingPara h3 {
+        font-size: 1rem;
+    }
+
+    .subHeadingPara p {
+        font-size: 0.9rem;
+    }
+
+    .learnButton a button {
+        font-size: 1rem;
+    }
+
+    .multipleServices {
+        width: 100% !important;
+        height: 392px !important;
+    }
+
+    .rareClass h4 {
+        font-size: 0.9rem;
+    }
+
+    .rareClass h1 {
+        font-size: 2rem;
+    }
+
+    .rareClass {
+        width: 100%;
+    }
+
+    .rareClass p {
+        font-size: 0.9rem;
+        margin-top: 2%;
+        width: 80%;
+    }
+
+    .firstElement {
+        width: 48%;
+    }
+
+    .firstElement h3 {
+        font-size: 1rem;
+    }
+
+
+    .firstElement p {
+        font-size: 0.9rem;
+        margin-top: 9px;
+    }
+
+    .millionImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .millionImg i {
+        font-weight: 900;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+
+    .newWay {
+        top: 18% !important;
+        width: 100% !important;
+    }
+
+    .overView {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .globalReach {
+        width: 47%;
+    }
+
+    .globalReach h3 {
+        font-size: 2rem;
+    }
+
+    .globalReach p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .fiveElement hr {
+        display: none;
+    }
+
+    .astrologerTestimonial {
+        height: auto;
+    }
+
+    .userExperience {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftUserHeading {
+        width: 90%;
+    }
+
+    .leftUserHeading h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .leftUserHeading h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .leftUserHeading h4 {
+        text-align: center;
+    }
+
+    .fa-arrow-left {
+        font-size: 1rem;
+    }
+
+    .fa-arrow-right {
+        font-size: 1rem;
+    }
+
+    .prev {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slidesButton {
+        width: 100%;
+        margin-top: 8%;
+        margin-bottom: 13%;
+    }
+
+    .reviewPara p {
+        font-size: 1rem;
+    }
+
+    .starRating {
+        margin-top: 5%;
+        width: 66%;
+    }
+
+    .userName h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+    }
+
+    .userName p {
+        font-size: 0.9rem;
+    }
+
+    .starShow i {
+        color: #a8a88e;
+        font-size: 14px;
+        margin-right: 0px;
+    }
+
+    .UserProfileView {
+        position: absolute;
+        bottom: 7%;
+        right: 8%;
+        border: 0px solid #a8a88e;
+        width: 85px;
+        height: 85px;
+    }
+
+    .whiteReview {
+        background-color: rgb(255, 255, 255);
+        padding: 6px 23px 16px;
+        height: 208px;
+        flex: 0 0 95%;
+        width: 90%;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .slider-container {
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mergeDivine {
+        width: 100%;
+        margin: 60px auto;
+        margin-top: 3%;
+        margin-bottom: 0%;
+    }
+
+    .mergeDivine h1 {
+        font-size: 2rem;
+        line-height: auto;
+    }
+
+    .mergeDivine h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .slidetheStones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gemsInfo h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .gemsInfo p {
+        font-size: 0.9rem;
+    }
+
+
+    .gemsWarriusSections {
+        width: 48%;
+        height: 371px;
+        margin: 30px auto;
+    }
+
+    .showheadingOfDivine {
+        margin-top: 23%;
+    }
+
+    .visitWeb {
+        width: auto;
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .visitWeb a button {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 800px) and (max-width:1000px) {
+
+    .profile {
+        height: auto !important;
+    }
+
+    .outerheader {
+        display: none;
+    }
+
+    .footerimg {
+        display: none;
+    }
+
+    .astroProfile {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6% auto;
+    }
+
+    .contentText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 7% auto;
+    }
+
+    .contentText h4 {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: rgb(234, 204, 29);
+    }
+
+    .contentText h1 {
+        font-family: Philosopher, sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 1%;
+        margin-bottom: 2.5%;
+    }
+
+    .contentText p {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: white;
+        width: 100%;
+        line-height: 1.15rem;
+        margin-top: 8px;
+    }
+
+    .bookAppointment button {
+        font-family: Poppins, sans-serif;
+        background-color: rgb(234, 204, 29);
+        font-weight: 500;
+        color: black;
+        border-radius: 6px;
+        padding: 11px 20px;
+        font-size: 0.9rem;
+        margin-top: 9%;
+        border: none;
+        margin-left: -3px;
+        cursor: pointer;
+        box-shadow: rgb(87 89 92 / 62%) 2px 2px 8px;
+        transition: 400ms ease-in-out;
+    }
+
+    .leftImageBox {
+        position: absolute;
+        top: 10% !important;
+        background-color: white;
+        width: 200px;
+        height: 63px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 2%;
+        animation: processingmoveobject 1500ms infinite linear alternate;
+    }
+
+    @keyframes processingmoveobject {
+        0% {
+            left: -20%;
+        }
+
+        100% {
+            left: -15%;
+        }
+    }
+
+
+    .leftImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 90%;
+        padding-left: 26%;
+    }
+
+    .leftImageBox span {
+        font-family: "Montserrat", sans-serif;
+        /* font-family: Poppins, sans-serif; */
+        position: absolute;
+        top: -44%;
+        left: 5%;
+        background-color: #2b2b31;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 43px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftImageBox i {
+        position: absolute;
+        bottom: 24%;
+        /* bottom: 7%; */
+        right: 3%;
+        left: 7%;
+        font-size: 1.8rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox {
+        position: absolute;
+        right: -9%;
+        bottom: 10%;
+        background-color: white;
+        width: 210px;
+        height: 60px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 80%;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .AStroImage {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 5%;
+        margin-bottom: 11%;
+        position: relative;
+    }
+
+    .addAstroImage {
+        width: 90%;
+        height: auto;
+        max-height: 370px;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #53544b8f;
+        overflow: hidden;
+    }
+
+    .aboutAstrologer {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textMatter {
+        width: 100%;
+    }
+
+    .textMatter h4 {
+        font-size: 0.9rem;
+    }
+
+    .textMatter h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-top: 1%;
+    }
+
+    .unlock {
+        font-size: 0.9rem;
+    }
+
+    .leftPara {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .leftPara h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 17%;
+    }
+
+    .leftPara p {
+        margin-top: 6%;
+        font-size: 0.87rem;
+    }
+
+    .rightPara {
+        width: 48%;
+    }
+
+    .rightPara h2 {
+        font-size: 1rem;
+        padding-left: 17%;
+    }
+
+
+    .rightPara p {
+        margin-top: 5%;
+        font-size: 0.9rem;
+    }
+
+    .imageContainer {
+        height: auto;
+        min-height: 551px;
+        max-height: 706px;
+        width: 100%;
+    }
+
+    .astroProfilePic {
+        width: 100%;
+        margin-top: 16%;
+    }
+
+    .imglowerBox {
+        width: 60%;
+        height: 126px;
+        padding: 6px 11px 6px 8px;
+    }
+
+    .imglowerBox h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #1c1c1f;
+        margin-left: 15px;
+    }
+
+
+
+    .allOneContact {
+        justify-content: center;
+        width: 33%;
+    }
+
+
+
+    .allOneContact i {
+        font-size: 1.9rem;
+        color: #4b4c59;
+        margin-right: 2px;
+    }
+
+    .allOneContact h2 {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    .chatServices {
+        width: 100%;
+        margin: 32px auto;
+    }
+
+    .ourServiceText h4 {
+        font-size: 0.9rem;
+    }
+
+    .ourServiceText h1 {
+        font-size: 2rem;
+    }
+
+    .sixCountries {
+        width: 45%;
+        height: auto;
+        max-height: 250px;
+        min-height: 210px;
+    }
+
+    .overAreas {
+        margin-bottom: -10%;
+    }
+
+    .nameOfCountry h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .uppertextHeading h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .uppertextHeading h1 {
+        font-size: 2rem;
+    }
+
+    .uppertextHeading {
+        margin-top: 29%;
+    }
+
+    .whyChoose {
+        height: auto;
+        margin-top: 31%;
+    }
+
+    .servicesShow {
+        height: 52vh;
+    }
+
+    .multipleServices {
+        width: 100% !important;
+        height: 365px !important;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subHeadingPara h3 {
+        font-size: 1.2rem;
+    }
+
+    .subHeadingPara p {
+        font-size: 1rem;
+    }
+
+    .learnButton a button {
+        font-size: 1.2rem;
+    }
+
+    .rareClass h4 {
+        font-size: 0.9rem;
+    }
+
+    .rareClass h1 {
+        font-size: 2rem;
+    }
+
+    .rareClass {
+        width: 100%;
+    }
+
+    .rareClass p {
+        font-size: 0.9rem;
+        margin-top: 2%;
+        width: 80%;
+    }
+
+    .firstElement {
+        width: 48%;
+    }
+
+    .firstElement h3 {
+        font-size: 1rem;
+    }
+
+
+    .firstElement p {
+        font-size: 0.9rem;
+        margin-top: 9px;
+    }
+
+    .millionImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .millionImg i {
+        font-weight: 900;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+
+    .newWay {
+        top: 18% !important;
+        width: 100% !important;
+    }
+
+    .overView {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .globalReach {
+        width: 47%;
+    }
+
+    .globalReach h3 {
+        font-size: 2rem;
+    }
+
+    .globalReach p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .fiveElement hr {
+        display: none;
+    }
+
+    .astrologerTestimonial {
+        height: auto;
+    }
+
+    .userExperience {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftUserHeading {
+        width: 90%;
+    }
+
+    .leftUserHeading h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .leftUserHeading h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .leftUserHeading h4 {
+        text-align: center;
+    }
+
+    .fa-arrow-left {
+        font-size: 1rem;
+    }
+
+    .fa-arrow-right {
+        font-size: 1rem;
+    }
+
+    .prev {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slidesButton {
+        width: 100%;
+        margin-top: 8%;
+        margin-bottom: 13%;
+    }
+
+    .reviewPara p {
+        font-size: 1rem;
+    }
+
+    .starRating {
+        margin-top: 5%;
+        width: 66%;
+    }
+
+    .userName h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+    }
+
+    .userName p {
+        font-size: 0.9rem;
+    }
+
+    .starShow i {
+        color: #a8a88e;
+        font-size: 14px;
+        margin-right: 0px;
+    }
+
+    .UserProfileView {
+        position: absolute;
+        bottom: 7%;
+        right: 8%;
+        border: 0px solid #a8a88e;
+        width: 85px;
+        height: 85px;
+    }
+
+    .whiteReview {
+        background-color: rgb(255, 255, 255);
+        padding: 6px 23px 16px;
+        height: 208px;
+        flex: 0 0 95%;
+        margin-right: 5%;
+        width: 100%;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .slider-container {
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mergeDivine {
+        width: 100%;
+        margin: 60px auto;
+        margin-top: 3%;
+        margin-bottom: 0%;
+    }
+
+    .mergeDivine h1 {
+        font-size: 2rem;
+        line-height: auto;
+    }
+
+    .mergeDivine h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .slidetheStones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gemsInfo h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .gemsInfo p {
+        font-size: 0.9rem;
+    }
+
+
+    .gemsWarriusSections {
+        width: 48%;
+        height: 371px;
+        margin: 30px auto;
+    }
+
+    .showheadingOfDivine {
+        margin-top: 23%;
+    }
+
+    .visitWeb {
+        width: auto;
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .visitWeb a button {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1300px) {
+
+    .profile {
+        height: auto !important;
+    }
+
+    .outerheader {
+        display: none;
+    }
+
+    .footerimg {
+        display: none;
+    }
+
+    .astroProfile {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 6% auto;
+    }
+
+    .contentText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 7% auto;
+    }
+
+    .contentText h4 {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: rgb(234, 204, 29);
+    }
+
+    .contentText h1 {
+        font-family: Philosopher, sans-serif;
+        font-weight: 600;
+        font-size: 2.7rem;
+        color: white;
+        margin-top: 1%;
+        margin-bottom: 2.5%;
+    }
+
+    .contentText p {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 0.95rem;
+        color: white;
+        width: 90%;
+        line-height: 1.5rem;
+        margin-top: 8px;
+    }
+
+    .bookAppointment button {
+        font-family: Poppins, sans-serif;
+        background-color: rgb(234, 204, 29);
+        font-weight: 500;
+        color: black;
+        border-radius: 6px;
+        padding: 13px 30px;
+        font-size: 1rem;
+        margin-top: 9%;
+        border: none;
+        margin-left: -3px;
+        cursor: pointer;
+        box-shadow: rgb(87 89 92 / 62%) 2px 2px 8px;
+        transition: 400ms ease-in-out;
+    }
+
+    .leftImageBox {
+        position: absolute;
+        top: 10% !important;
+        background-color: white;
+        width: 200px;
+        height: 63px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 2%;
+        animation: processingmoveobject 1500ms infinite linear alternate;
+    }
+
+    @keyframes processingmoveobject {
+        0% {
+            left: -20%;
+        }
+
+        100% {
+            left: -15%;
+        }
+    }
+
+
+    .leftImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 90%;
+        padding-left: 26%;
+    }
+
+    .leftImageBox span {
+        font-family: "Montserrat", sans-serif;
+        /* font-family: Poppins, sans-serif; */
+        position: absolute;
+        top: -44%;
+        left: 5%;
+        background-color: #2b2b31;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 43px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftImageBox i {
+        position: absolute;
+        bottom: 24%;
+        /* bottom: 7%; */
+        right: 3%;
+        left: 7%;
+        font-size: 1.8rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox {
+        position: absolute;
+        right: -9%;
+        bottom: 10%;
+        background-color: white;
+        width: 210px;
+        height: 60px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 16px #1f202154;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightImageBox h3 {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #1c1c1f;
+        /* margin-top: 10px; */
+        text-align: left;
+        width: 80%;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .rightImageBox i {
+        position: absolute;
+        top: -1%;
+        right: 2%;
+        transform: rotate(-80deg);
+        font-size: 1.7rem;
+        color: #2b2b3147;
+    }
+
+    .AStroImage {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 5%;
+        margin-bottom: 11%;
+        position: relative;
+    }
+
+    .addAstroImage {
+        width: 90%;
+        height: 457px;
+        max-height: 457px;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px #53544b8f;
+        overflow: hidden;
+    }
+
+    .aboutAstrologer {
+        width: 100%;
+        display: flex;
+    }
+
+    .textMatter {
+        width: 50%;
+    }
+
+    .textMatter h4 {
+        font-size: 0.9rem;
+    }
+
+    .textMatter h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-top: 1%;
+    }
+
+    .unlock {
+        font-size: 0.9rem;
+    }
+
+    .leftPara {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .leftPara h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 24%;
+    }
+
+    .leftPara p {
+        margin-top: 6%;
+        font-size: 0.85rem;
+    }
+
+    .rightPara {
+        width: 49%;
+    }
+
+    .rightPara h2 {
+        font-size: 1rem;
+        padding-left: 24%;
+    }
+
+
+    .rightPara p {
+        margin-top: 5%;
+        font-size: 0.85rem;
+    }
+
+    .imageContainer {
+        height: 474px;
+        max-height: 706px;
+        width: 468px;
+    }
+
+    .astroProfilePic {
+        width: 50%;
+    }
+
+    .imglowerBox {
+        width: 63%;
+        height: 103px;
+        padding: 6px 11px 6px 8px;
+    }
+
+    .imglowerBox h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.38rem;
+        color: #1c1c1f;
+        margin-left: 15px;
+    }
+
+
+
+    .allOneContact {
+        justify-content: center;
+        width: 33%;
+    }
+
+
+
+    .allOneContact i {
+        font-size: 1.9rem;
+        color: #4b4c59;
+        margin-right: 2px;
+    }
+
+    .allOneContact h2 {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    .chatServices {
+        width: 100%;
+        margin: 32px auto;
+    }
+
+    .ourServiceText h4 {
+        font-size: 0.9rem;
+    }
+
+    .ourServiceText h1 {
+        font-size: 2rem;
+    }
+
+    .sixCountries {
+        width: 330px;
+        height: 330px;
+    }
+
+    .overAreas {
+        margin-bottom: -10%;
+    }
+
+    .nameOfCountry h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .uppertextHeading h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .uppertextHeading h1 {
+        font-size: 2rem;
+    }
+
+    .uppertextHeading {
+        margin-top: 14%;
+    }
+
+    .whyChoose {
+        height: auto;
+        margin-top: 31%;
+    }
+
+    .servicesShow {
+        height: 84vh;
+    }
+
+    .multipleServices {
+        width: 100% !important;
+        height: 365px !important;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subHeadingPara h3 {
+        font-size: 1rem;
+    }
+
+    .subHeadingPara p {
+        font-size: 0.9rem;
+    }
+
+    .learnButton a button {
+        font-size: 1rem;
+    }
+
+    .rareClass h4 {
+        font-size: 0.9rem;
+    }
+
+    .rareClass h1 {
+        font-size: 2rem;
+    }
+
+    .rareClass {
+        width: 100%;
+    }
+
+    .rareClass p {
+        font-size: 0.9rem;
+        margin-top: 2%;
+        width: 80%;
+    }
+
+    .firstElement {
+        width: 48%;
+    }
+
+    .firstElement h3 {
+        font-size: 1rem;
+    }
+
+
+    .firstElement p {
+        font-size: 0.9rem;
+        margin-top: 9px;
+    }
+
+    .millionImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .millionImg i {
+        font-weight: 900;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+
+    .newWay {
+        top: 18% !important;
+        width: 100% !important;
+    }
+
+    .overView {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .globalReach {
+        width: 47%;
+    }
+
+    .globalReach h3 {
+        font-size: 2rem;
+    }
+
+    .globalReach p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .fiveElement hr {
+        display: none;
+    }
+
+    .astrologerTestimonial {
+        height: auto;
+    }
+
+    .userExperience {
+        width: 95%;
+    }
+
+    .leftUserHeading {
+        width: 40%;
+    }
+
+    .leftUserHeading h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .leftUserHeading h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .leftUserHeading h4 {
+        text-align: center;
+    }
+
+    .fa-arrow-left {
+        font-size: 1rem;
+    }
+
+    .fa-arrow-right {
+        font-size: 1rem;
+    }
+
+    .prev {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        left: 34%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        font-size: 20px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        right: 39%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slidesButton {
+        width: 100%;
+        margin-top: 8%;
+        margin-bottom: 13%;
+    }
+
+    .reviewPara p {
+        font-size: 1rem;
+    }
+
+    .starRating {
+        margin-top: 5%;
+        width: 66%;
+    }
+
+    .userName h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+    }
+
+    .userName p {
+        font-size: 0.9rem;
+    }
+
+    .starShow i {
+        color: #a8a88e;
+        font-size: 14px;
+        margin-right: 0px;
+    }
+
+    .UserProfileView {
+        position: absolute;
+        bottom: 7%;
+        right: 8%;
+        border: 0px solid #a8a88e;
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .slider-container {
+        width: 60%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mergeDivine {
+        width: 100%;
+        margin: 60px auto;
+        margin-top: 3%;
+        margin-bottom: 0%;
+    }
+
+    .mergeDivine h1 {
+        font-size: 2rem;
+        line-height: auto;
+    }
+
+    .mergeDivine h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .slidetheStones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gemsInfo h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .gemsInfo p {
+        font-size: 0.85rem;
+    }
+
+
+    .gemsWarriusSections {
+        width: 229;
+        height: 393px;
+        margin: 30px auto;
+    }
+
+    .showheadingOfDivine {
+        margin-top: 23%;
+    }
+
+    .visitWeb {
+        width: auto;
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .visitWeb a button {
+        font-size: 1rem;
+    }
+
+
+
+}

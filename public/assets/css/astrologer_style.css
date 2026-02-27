@@ -1,0 +1,210 @@
+
+    .enquirylist {
+        width: 100%;
+    }
+
+    .newenquiry {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .user-details {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-details {
+        background-color: white;
+        width: 48%;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        border-left: 4px solid #e8bc52;
+        border-top: 1px solid #e9ebec;
+        border-bottom: 1px solid #e9ebec;
+        border-right: 1px solid #e9ebec;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 10px;
+        border-radius: 0.25rem;
+        box-shadow: 2px 2px 5px -3px #c3c4c5;
+    }
+
+    .info-details22 {
+        background-color: white;
+        width: 48%;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        border-left: 4px solid #13c56b;
+        border-top: 1px solid #e9ebec;
+        border-bottom: 1px solid #e9ebec;
+        border-right: 1px solid #e9ebec;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 10px;
+        border-radius: 0.25rem;
+        box-shadow: 1px 1px 4px -2px #c3c4c5;
+    }
+
+    .restpartdetails {
+        width: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .enquiryimg {
+
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-top: 10px;
+
+    }
+
+    .enquiryimg img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .profileenquiry {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .otherenquiry {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 5px;
+    }
+
+    .specilization {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .remarkbutton {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .otherenquiry h3 {
+        color: rgba(33, 37, 41);
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin: 5px 10px;
+        width: 45%;
+    }
+
+    .specilization {
+        color: rgba(33, 37, 41);
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin: 5px 10px;
+    }
+
+    .remarkbutton button {
+        color: rgb(30 31 32);
+        font-size: 12.5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin: 5px 10px;
+        border: none;
+        width: 150px;
+        height: 24px;
+        background: #f9e9cb;
+        border-radius: 4px;
+    }
+
+    .remarkbutton22 {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .remarkbutton22 button {
+        color: rgb(30 31 32);
+        font-size: 12.5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin: 5px 10px;
+        border: none;
+        width: 150px;
+        height: 24px;
+        background: #c5efda;
+        border-radius: 4px;
+    }
+
+    .emailenquiry {
+        width: 58%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .emailenquiry h3 {
+        color: rgba(33, 37, 41);
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px 10px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .emailenquiry h3 span {
+        font-weight: 600;
+
+        color: #5c5d5e;
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0px 5px;
+    }
+
+    .mobilenumber {
+        width: 42%;
+    }
+
+    .mobilenumber h3 {
+        color: rgba(33, 37, 41);
+
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px 10px;
+        width: 100%;
+        font-weight: 600;
+
+    }
+
+    .mobilenumber h3 span {
+        color: #5c5d5e;
+        font-weight: 600;
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0px 5px;
+    }
+

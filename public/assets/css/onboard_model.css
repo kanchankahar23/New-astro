@@ -1,0 +1,57 @@
+
+.modal-content { position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #CED4DA;
+    border-radius: 0.3rem;
+    outline: 0;
+    margin: auto;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+    padding: 35px 0px;
+    width: 95%;
+    margin: auto;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 2px;
+    font-family: "Poppins", sans-serif;
+}
+.form-control
+  {
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #e5e5e5c7;
+    border-radius: 6px;
+}
+.formfile{
+    display: flex;
+    justify-content: space-evenly;
+}
+.submitbtn{
+    width: 44%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition:  all 400ms ease-in-out;
+}
+.submitbtn:hover{
+background: rgb(12, 12, 12);
+transform: scale(1.05);
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+

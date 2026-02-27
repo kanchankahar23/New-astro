@@ -1,0 +1,111 @@
+<title>Kaalsharp Dosh Report</title>
+<style>
+    
+    .table-custom th,
+    .table-custom td {
+        border: 1px solid #fbe216 !important;
+    }
+
+
+
+    .table-header {
+        background-color: #fbe216 !important;
+        color: white;
+    }
+
+    .disclaimer {
+        background-color: #fbe216 !important;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    tbody tr td:nth-child(1) {
+   width: 25%;
+}
+</style>
+<div class=" mt-4" style="padding: 50px">
+    <div class="tab-betail">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item mb-2 GeneralPrediction allBoxBorder" role="presentation">
+                <a id="dasha-tab" data-toggle="tab" href="#dashaPage" role="tab"
+                    onclick="showPage('dasha', this),getMangalDosha()" aria-controls="contact" aria-selected="false"
+                    class="border-0 nav-link text-uppercase  ">Mangal Dosha</a>
+            </li>
+            <li class="nav-item mb-2 GeneralPrediction allBoxBorder" role="presentation">
+                <a id="kaalsharpDosha-tab" data-toggle="tab" href="#kaalsharpDoshaPage" role="tab"
+                    onclick="showPage('kaalsharpDosha', this),getKaalsharpDosha()" aria-controls="contact"
+                    aria-selected="false"
+                    class="border-0 nav-link text-uppercase clickedpage">Kaalsharp Dosha</a>
+            </li>
+            <li class="nav-item mb-2 GeneralPrediction allBoxBorder" role="presentation">
+                <a id="pitraDosha-tab" data-toggle="tab" href="#pitraDoshaPage" role="tab"
+                    onclick="showPage('pitraDosha', this),getPitraDosha()" aria-controls="contact" aria-selected="false"
+                    class="border-0 nav-link text-uppercase ">Pitra Dosha</a>
+            </li>
+            <li class="nav-item mb-2 GeneralPrediction allBoxBorder" role="presentation">
+                <a id="papasamaya-tab" data-toggle="tab" href="#papasamayaPage" role="tab"
+                    onclick="showPage('papasamaya', this),getPapasamaya()" aria-controls="contact" aria-selected="false"
+                    class="border-0 nav-link text-uppercase ">Papasamaya</a>
+            </li>
+
+        </ul>
+    </div>
+    <br>
+    <h5 class="mb-4 mangalfont mahaPridictio">Kaalsharp Dosh Report</h5>
+    <table class="table table-custom">
+
+        <thead>
+            <tr class="table-header">
+                <th colspan="2">Kaalsharp Dosh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @lang('messages.isDoshaPresent')
+
+                </td>
+                <td>{{ $response['is_dosha_present'] ? 'Yes' : 'No' }}</td>
+            </tr>
+
+            <tr>
+                <td>
+                    @lang('messages.botResponse')
+
+                </td>
+                <td>{{ $response['bot_response'] }}</td>
+            </tr>
+            <tr>
+                <td>
+                    @lang('messages.doshaDirection')
+
+                </td>
+                <td>{{ $response['dosha_direction'] ?? 'N/A' }}</td>
+            </tr>
+
+            <tr>
+                <td>
+                    @lang('messages.remedies')
+
+                </td>
+                <td>
+                    @if (!empty($response['remedies']))
+                        <ul>
+                            @foreach ($response['remedies'] as $remedy)
+                                <li>{{ $remedy }}</li>
+                            @endforeach
+                        </ul>
+                    @else
+                        N/A
+                    @endif
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div class="disclaimer">
+        Disclaimer: This is a computer-generated analysis. Kindly contact our Astrologer to understand this in detail.
+    </div>
+</div>
