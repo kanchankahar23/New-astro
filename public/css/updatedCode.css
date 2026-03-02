@@ -1,0 +1,41 @@
+.al-header-wrapper .menu li a:hover {
+    color: #e79a0b;
+    font-weight: 800;
+}
+
+.al-sub {
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* .swiper-button-next:hover {
+    background-color: #CB4A0C;
+    ;
+} */
+
+.al-testimonial-wrapper .swiper-button-next:hover {
+    background-color: #dc4803;
+}
+
+.al-testimonial-wrapper .swiper-button-prev:hover {
+    background-color: #dc4803;
+}
+
+.al-btn {
+    background-color: #dc4803;
+}
+
+.menu-item-912 .btn{
+    background-color: #FF7010;
+    width: 100px !important;
+    border-radius: 10px;
+    color: white !important;
+}
+.swiper-container{
+    padding: 20px !important;
+    border: 2px solid pink;
+    width: 1200px !important;
+}
+.al-menu-toggle::before{
+     background-color: #FF7010 !important;
+}
