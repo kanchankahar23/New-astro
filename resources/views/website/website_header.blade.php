@@ -181,9 +181,9 @@
                     <div class="al-main-nav-wrapper">
                         <div class="al-main-navigation">
                             <div class="menu-main_menu-container">
-                                <ul id="astrologer-menu" class="astroMoDevice menu">
-                                    <li id="menu-item-916"
-                                        class="weBiConSelector menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 menu-item-916" data-page="{{ url('/home') }}">
+                                <ul id="asrologer-menu" class="astroMoDevice menu">
+                                    <li id=""
+                                        class="" data-page="{{ url('/home') }}">
                                         <a href="{{ url('/') }}" aria-current="page">Home</a>
                                     </li>
                                     <li id="menu-item-913"
@@ -557,13 +557,14 @@
 
 /* .upperhead {
     transition: top 0.3s ease-in-out;
-}
-
+/* } */
+/* 
 .astroMoDevice {
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-} */
-
+    /* transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); */
+    /* background-color: orange; */
+/* } / */
+ /* */ */
 
  </style>
 
