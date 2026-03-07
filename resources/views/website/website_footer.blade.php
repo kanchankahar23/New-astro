@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
-    .socialIcon{
+        .socialIcon{
     width: 140px !important;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
     }
     .socialIcon a{
     width: 40px !important;
-    }
+}
 </style>
 <footer class="al-footer-wrapper default-footer">
     <div style="margin-top: 30px; margin-bottom:100px;" class="container">
@@ -97,7 +97,7 @@
                                 support@astro-buddy.com</a>
                         </p>
                     </li>
-                    <li class="socialIcon">
+                    <!-- <li class="socialIcon">
                         <a href="https://www.linkedin.com/company/astrobuddy/posts/?feedView=all"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/astro_.buddy/"><i
@@ -106,7 +106,7 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/astro_buddyy"><i
                                 class="fa-brands fa-x-twitter"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

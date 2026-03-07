@@ -12,30 +12,193 @@
     background-color: #CB4A0C;
     ;
 } */
-
-.al-testimonial-wrapper .swiper-button-next:hover {
-    background-color: #dc4803;
-}
-
-.al-testimonial-wrapper .swiper-button-prev:hover {
-    background-color: #dc4803;
-}
-
 .al-btn {
-    background-color: #dc4803;
+    background-color: #d25e10 !important;
+    font-size: 17px;
 }
 
-.menu-item-912 .btn{
-    background-color: #FF7010;
+.menu-item-912 .btn {
+    background: linear-gradient(0deg, rgb(253, 127, 9) 0%, rgb(203 74 12) 100%);
     width: 100px !important;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white !important;
 }
-.swiper-container{
+
+/* .swiper-container {
     padding: 20px !important;
     border: 2px solid pink;
     width: 1200px !important;
+} */
+
+.al-menu-toggle::before {
+    background-color: #FF7010 !important;
 }
-.al-menu-toggle::before{
-     background-color: #FF7010 !important;
+
+.al-heading {
+    color: #000000;
+    font-size: 26px;
+    /* font-family: sans-serif; */
+    font-weight: 600;
+}
+
+.as-paragraph-wrapper p {
+    color: rgb(110, 108, 108);
+}
+
+.img-responsive {
+    border-radius: 10px;
+}
+
+.as-contact-expert .as-icon::before {
+    box-shadow: 0 0 15px rgba(232, 116, 7, 0.6);
+}
+
+.as-paragraph-wrapper {
+    border-left: 3px solid #FF7010 !important;
+}
+
+.kundali-heading {
+    gap: 10px;
+}
+
+
+.buyNow button {
+    margin-top: 15px;
+}
+
+
+/* Hide default cursor */
+body {
+    cursor: none;
+}
+
+/* Outer circle */
+.cursor-circle {
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #cf5706;
+    /* purple like your site */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.12s ease-out;
+    z-index: 99999;
+}
+
+/* Inner dot */
+.cursor-dot {
+    position: fixed;
+    width: 13px;
+    height: 13px;
+    background: #FF7010;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+}
+
+
+.rr-appointment-card:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    background-color: #fcba8f !important;
+}
+
+.buyNow .link-btn button {
+    background-color: pink !important;
+}
+
+.as-service-box p {
+    margin-top: 20px;
+}
+
+.as-service-box:hover {
+    background-color: #cb5100 !important;
+    color: white !important;
+}
+
+.buyNow button:hover {
+    background-color: pink !important;
+}
+
+.as-service-box:hover .as-subheading,
+.as-service-box:hover p,
+.as-service-box:hover .as-link {
+    color: white;
+}
+
+.as-service-box .as-icon svg {
+    fill: var(--al-primary-color);
+    transition: none;
+}
+
+.as-service-box:hover .as-icon svg {
+    fill: white;
+    transition: none;
+}
+
+.ss-content-1 h1,
+.ss-content-1 p {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease forwards;
+}
+
+.professional-1 {
+    animation-delay: 0.3s;
+}
+
+.luck-1 {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.raShiOfFrontPage {
+    transition: all 0.3s ease;
+}
+
+.raShiOfFrontPage:hover {
+    background-color: #f76401 !important;
+    color: white;
+}
+
+/* change inner text also */
+.raShiOfFrontPage:hover p,
+.raShiOfFrontPage:hover h3,
+.raShiOfFrontPage:hover a {
+    color: rgb(38, 37, 37);
+}
+
+.al-expert-content p {
+    color: #4b4b4b;
+}
+
+.testimonial123-carousel-item {
+    background-color: #faf0ea !important;
+
+}
+
+.testimonial123-content h4 {
+    margin-top: 30px;
+}
+
+.followers {
+    text-align: center;
+    color: white;
+}
+.al-copyright-wrapper{
+    background-color: #000000 !important;
+
 }
