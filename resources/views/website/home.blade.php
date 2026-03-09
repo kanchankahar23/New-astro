@@ -598,18 +598,18 @@
         }
 
         /* .gems::after {
-                                        position: absolute;
-                                        content: '';
-                                        background-image: url(http://127.0.0.1:8000/website/assets/shape.svg);
-                                        background-repeat: no-repeat;
-                                        width: 100%;
-                                        height: 190px;
-                                        left: 0;
-                                        right: 0;
-                                        transform: scaleY(-1);
-                                        bottom: 0;
-                                        z-index: 1;
-                                    } */
+                                            position: absolute;
+                                            content: '';
+                                            background-image: url(http://127.0.0.1:8000/website/assets/shape.svg);
+                                            background-repeat: no-repeat;
+                                            width: 100%;
+                                            height: 190px;
+                                            left: 0;
+                                            right: 0;
+                                            transform: scaleY(-1);
+                                            bottom: 0;
+                                            z-index: 1;
+                                        } */
 
         .stoneGems {
             width: 80%;
@@ -812,38 +812,38 @@
     <style>
         /* Media Queries for Responsive Design */
         /* @media (max-width: 768px) {
-                                            .ss-container {
-                                              flex-direction: column;
-                                              height: auto;
-                                            }
+                                                .ss-container {
+                                                  flex-direction: column;
+                                                  height: auto;
+                                                }
 
-                                            .ss-left,
-                                            .ss-right {
-                                              flex: none;
-                                              width: 100%;
+                                                .ss-left,
+                                                .ss-right {
+                                                  flex: none;
+                                                  width: 100%;
 
-                                            .ss-left h1 {
-                                              font-size: 1.5rem;
-                                            }
+                                                .ss-left h1 {
+                                                  font-size: 1.5rem;
+                                                }
 
-                                            .ss-left p {
-                                              font-size: 0.9rem;
-                                            }
+                                                .ss-left p {
+                                                  font-size: 0.9rem;
+                                                }
 
-                                            .ss-circle {
-                                              width: 80vw;
-                                              height: 80vw;
-                                            }
-                                          }
+                                                .ss-circle {
+                                                  width: 80vw;
+                                                  height: 80vw;
+                                                }
+                                              }
 
-                                          @media (max-width: 480px) {
-                                            .ss-left h1 {
-                                              font-size: 1.2rem;
-                                            }
+                                              @media (max-width: 480px) {
+                                                .ss-left h1 {
+                                                  font-size: 1.2rem;
+                                                }
 
-                                            .ss-left p {
-                                              font-size: 0.8rem;
-                                            } */
+                                                .ss-left p {
+                                                  font-size: 0.8rem;
+                                                } */
         /* } */
     </style>
     </style>
@@ -1014,7 +1014,7 @@
                                                                                                                                                                                                                                                                                                                     style="background:{{ $astrologer->astrologerDetail->getTag->color ?? 'rgb(121, 24, 120)' }}">
                                                                                                                                                                                                                                                                                                                     <h3 class='PremiumCards'
                                                                                                                                                                                                                                                                                                                         style="font-size: 0.7rem !important;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            font-weight: 500 !important;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                font-weight: 500 !important;">
                                                                                                                                                                                                                                                                                                                         {{
                                                                                                                                                                                                                 $astrologer->astrologerDetail->getTag->name ?? '' }}
                                                                                                                                                                                                                                                                                                                     </h3>
@@ -1101,17 +1101,17 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <!-- <div class="swiper-button-prev"
-                                                                                                                            tabindex="0"
-                                                                                                                            role="button"
-                                                                                                                            aria-label="Previous slide"
-                                                                                                                            aria-controls="swiper-wrapper-f6593c349f5cafdf">
-                                                                                                                        </div>
-                                                                                                                        <div class="swiper-button-next"
-                                                                                                                            tabindex="0"
-                                                                                                                            role="button"
-                                                                                                                            aria-label="Next slide"
-                                                                                                                            aria-controls="swiper-wrapper-f6593c349f5cafdf">
-                                                                                                                        </div> -->
+                                                                                                                                tabindex="0"
+                                                                                                                                role="button"
+                                                                                                                                aria-label="Previous slide"
+                                                                                                                                aria-controls="swiper-wrapper-f6593c349f5cafdf">
+                                                                                                                            </div>
+                                                                                                                            <div class="swiper-button-next"
+                                                                                                                                tabindex="0"
+                                                                                                                                role="button"
+                                                                                                                                aria-label="Next slide"
+                                                                                                                                aria-controls="swiper-wrapper-f6593c349f5cafdf">
+                                                                                                                            </div> -->
                                                                                         </div>
                                                                                         <div class="al-slidr-btn">
                                                                                             <a href="{{ url('/astrologers') }}"
@@ -1121,10 +1121,10 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <!-- <div class="vc_empty_space"
-                                                                                                        style="height: 80px">
-                                                                                                        <span
-                                                                                                            class="vc_empty_space_inner"></span>
-                                                                                                    </div> -->
+                                                                                                            style="height: 80px">
+                                                                                                            <span
+                                                                                                                class="vc_empty_space_inner"></span>
+                                                                                                        </div> -->
                                                                             </div>
 
 
@@ -1135,7 +1135,7 @@
                                                                 </div>
                                                                 <div data-vc-full-width="true"
                                                                     data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1632907904450 vc_r
-                                                                            ow-has-fill">
+                                                                                ow-has-fill">
                                                                     <div
                                                                         class="wpb_column vc_column_container vc_col-sm-12">
                                                                         <div class="vc_column-inner">
@@ -1270,8 +1270,8 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <!-- <a href="/about-us/" class="al-btn"
-                                                                                                                            >Read More</a
-                                                                                                                          > -->
+                                                                                                                                >Read More</a
+                                                                                                                              > -->
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -1299,7 +1299,7 @@
                                                                             <p style="color: black; font-weight: 500;">
                                                                                 Premium Kundali offers a
                                                                                 personalized Kundli reading by seasoned
-                                                                                astrologers who study
+                                                                                astrologers who study <br>
                                                                                 every detail of your birth chart to guide
                                                                                 your future with
                                                                                 clarity.</p>
@@ -1452,8 +1452,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1483,8 +1483,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1514,8 +1514,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1545,8 +1545,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1576,8 +1576,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1607,8 +1607,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1641,8 +1641,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1672,8 +1672,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1703,8 +1703,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1734,8 +1734,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1765,8 +1765,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -1796,8 +1796,8 @@
                                                                                                             </a>
                                                                                                             <p>{{
         date('M
-                                                                                                                                            d')
-                                                                                                                                            }}
+                                                                                                                                                d')
+                                                                                                                                                }}
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -2155,11 +2155,11 @@
                                                                                                         <span
                                                                                                             class="as-number counter-item"
                                                                                                             style="
-                                                                              min-height: 100px;
-                                                                              border-radius: 8px;
-                                                                              border: 1px solid #ffffff35;
-                                                                              background: #ffffff23;
-                                                                            ">
+                                                                                  min-height: 100px;
+                                                                                  border-radius: 8px;
+                                                                                  border: 1px solid #ffffff35;
+                                                                                  background: #ffffff23;
+                                                                                ">
                                                                                                             <span><span
                                                                                                                     class="count-no"
                                                                                                                     data-count="100">0</span>+</span></span>
@@ -2186,11 +2186,11 @@
                                                                                                         <span
                                                                                                             class="as-number counter-item"
                                                                                                             style="
-                                                                              min-height: 100px;
-                                                                              border-radius: 8px;
-                                                                              border: 1px solid #ffffff35;
-                                                                              background: #ffffff23;
-                                                                            "><span><span class="count-no"
+                                                                                  min-height: 100px;
+                                                                                  border-radius: 8px;
+                                                                                  border: 1px solid #ffffff35;
+                                                                                  background: #ffffff23;
+                                                                                "><span><span class="count-no"
                                                                                                                     data-count="55">0</span>+</span></span>
                                                                                                         <h4>Year&#039;s
                                                                                                             experience
@@ -2211,11 +2211,11 @@
                                                                                                         <span
                                                                                                             class="as-number counter-item"
                                                                                                             style="
-                                                                              min-height: 100px;
-                                                                              border-radius: 8px;
-                                                                              border: 1px solid #ffffff35;
-                                                                              background: #ffffff23;
-                                                                            "><span><span class="count-no"
+                                                                                  min-height: 100px;
+                                                                                  border-radius: 8px;
+                                                                                  border: 1px solid #ffffff35;
+                                                                                  background: #ffffff23;
+                                                                                "><span><span class="count-no"
                                                                                                                     data-count="65">0</span>+</span></span>
                                                                                                         <h4>Types
                                                                                                             of
@@ -2237,11 +2237,11 @@
                                                                                                         <span
                                                                                                             class="as-number counter-item"
                                                                                                             style="
-                                                                              min-height: 100px;
-                                                                              border-radius: 8px;
-                                                                              border: 1px solid #ffffff35;
-                                                                              background: #ffffff23;
-                                                                            "><span><span class="count-no"
+                                                                                  min-height: 100px;
+                                                                                  border-radius: 8px;
+                                                                                  border: 1px solid #ffffff35;
+                                                                                  background: #ffffff23;
+                                                                                "><span><span class="count-no"
                                                                                                                     data-count="90">0</span>+</span></span>
                                                                                                         <h4>Qualified
                                                                                                             Astrologers
@@ -2262,11 +2262,11 @@
                                                                                                         <span
                                                                                                             class="as-number counter-item"
                                                                                                             style="
-                                                                              min-height: 100px;
-                                                                              border-radius: 8px;
-                                                                              border: 1px solid #ffffff35;
-                                                                              background: #ffffff23;
-                                                                            "><span><span class="count-no"
+                                                                                  min-height: 100px;
+                                                                                  border-radius: 8px;
+                                                                                  border: 1px solid #ffffff35;
+                                                                                  background: #ffffff23;
+                                                                                "><span><span class="count-no"
                                                                                                                     data-count="95">0</span>+</span></span>
                                                                                                         <h4>Success
                                                                                                             Horoscope
@@ -2337,7 +2337,7 @@
                                                                                     <a href="http://divinestones.in/">
                                                                                         <p class="stonePayment"
                                                                                             style='margin-bottom: 0 !important;
-                                                                                                                                                                                                                                                                                                    margin-top: 0 !important;'>
+                                                                                                                                                                                                                                                                                                        margin-top: 0 !important;'>
                                                                                             Visit
                                                                                             to
                                                                                             Our
@@ -2376,7 +2376,7 @@
                                                                                     <a href="http://divinestones.in/">
                                                                                         <p class="stonePayment"
                                                                                             style='margin-bottom: 0 !important;
-                                                                                                                                                                                                                                                                                                    margin-top: 0 !important;'>
+                                                                                                                                                                                                                                                                                                        margin-top: 0 !important;'>
                                                                                             Visit
                                                                                             to
                                                                                             Our
@@ -2412,7 +2412,7 @@
                                                                                         <a href="http://divinestones.in/">
                                                                                             <p class="stonePayment"
                                                                                                 style='margin-bottom: 0 !important;
-                                                                                                                                                                                                                                                                                                    margin-top: 0 !important;'>
+                                                                                                                                                                                                                                                                                                        margin-top: 0 !important;'>
                                                                                                 Visit
                                                                                                 to
                                                                                                 Our
@@ -2449,7 +2449,7 @@
                                                                                         <a href="http://divinestones.in/">
                                                                                             <p class="stonePayment"
                                                                                                 style='margin-bottom: 0 !important;
-                                                                                                                                                                                                                                                                                                    margin-top: 0 !important;'>
+                                                                                                                                                                                                                                                                                                        margin-top: 0 !important;'>
                                                                                                 Visit
                                                                                                 to
                                                                                                 Our

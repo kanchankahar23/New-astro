@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/responsive.css') }}">
 <audio id="incomingRingtone" src="{{ url('assets/ringtones/incoming_call.mp3') }}"
     preload="auto" loop></audio>
+    
     <style>
         .toast {
         max-width: 293px !important;

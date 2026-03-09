@@ -26,7 +26,6 @@
       href="{{ asset('website/plugins/astro-appointment/assets/css/responsive.css') }}">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
       /* Modal Container */
       .modal {
         /* Hidden by default */

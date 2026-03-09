@@ -3,6 +3,7 @@
      <title>AstroBuddy | @yield('title')</title>
         <link rel="icon" href="{{asset('website/astro_link_icon.ico')}}"
             sizes="32x32" />
+            
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

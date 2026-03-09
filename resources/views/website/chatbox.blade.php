@@ -1,6 +1,7 @@
 @extends('website.dashboard_master')
 @section('title','Chat')
 @section('content')
+ 
 <div class="container-fluid ">
     <div class="row">
         <div class="col-md-12">

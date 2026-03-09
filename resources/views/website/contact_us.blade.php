@@ -1,7 +1,7 @@
 @extends('website.website_master')
 @section('title',' Contact Us')
 @section('content')
-
+  
     <link rel="stylesheet" href="{{ asset('website/styles/style.min.css')}}" />
     <link  rel="stylesheet"  href="{{ asset('website/plugins/astro-appointment/assets/css/freekundli.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/responsive.css')}}">

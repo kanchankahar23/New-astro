@@ -89,40 +89,43 @@
         }
     </script>
     <script>
-        {{--  $(document).on('change', '#languageSelect', function() {
-            loadHoroscopeData(); // Load horoscope when language is changed
-        });
-        function loadHoroscopeData(element = null) {
-            var id;
+        {
+            {
+                --$(document).on('change', '#languageSelect', function () {
+                    loadHoroscopeData(); // Load horoscope when language is changed
+                });
+                function loadHoroscopeData(element = null) {
+                    var id;
 
-            if (element !== null) {
-                id = $(element).data('id');
-            } else {
-                id = "{{ $zodiac }}";
-            }
-            var lang = $('#languageSelect').val();
-            $('#preloader').show();
-            $.ajax({
-                url: "{{ url($report_type . '/horoscope-response/') }}" + "/" + id,
-                method: 'GET',
-                data: {
-                    lang: lang
-                },
-                success: function(data) {
-                    $('#horoscope-data-container').html(data);
-                    $('#preloader').hide();
-                },
-                error: function() {
-                    $('#horoscope-data-container').html('<p>An error has occurred</p>');
-                    $('#preloader').hide();
+                    if (element !== null) {
+                        id = $(element).data('id');
+                    } else {
+                        id = "{{ $zodiac }}";
+                    }
+                    var lang = $('#languageSelect').val();
+                    $('#preloader').show();
+                    $.ajax({
+                        url: "{{ url($report_type . '/horoscope-response/') }}" + "/" + id,
+                        method: 'GET',
+                        data: {
+                            lang: lang
+                        },
+                        success: function (data) {
+                            $('#horoscope-data-container').html(data);
+                            $('#preloader').hide();
+                        },
+                        error: function () {
+                            $('#horoscope-data-container').html('<p>An error has occurred</p>');
+                            $('#preloader').hide();
+                        }
+                    });
                 }
-            });
+                $(document).on('click', 'a[data-id]', function (event) {
+                    event.preventDefault();
+                    loadHoroscopeData(this);
+                }); --}
         }
-        $(document).on('click', 'a[data-id]', function(event) {
-            event.preventDefault();
-            loadHoroscopeData(this);
-        });  --}}
-        $(document).on('change', '#languageSelect', function() {
+        $(document).on('change', '#languageSelect', function () {
             loadHoroscopeData(); // Load horoscope when language is changed
         });
         function loadHoroscopeData(element = null) {
@@ -140,18 +143,18 @@
                 data: {
                     lang: lang
                 },
-                success: function(data) {
+                success: function (data) {
                     $('#horoscope-data-container').html(data);
                     $('#preloader').hide();
                 },
-                error: function() {
+                error: function () {
                     $('#horoscope-data-container').html('<p>An error has occurred</p>');
                     $('#preloader').hide();
                 }
             });
         }
 
-        $(document).on('click', 'a[data-id]', function(event) {
+        $(document).on('click', 'a[data-id]', function (event) {
             event.preventDefault();
             loadHoroscopeData(this);
         });

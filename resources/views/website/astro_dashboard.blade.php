@@ -1,6 +1,7 @@
 @extends('website.dashboard_master')
 @section('title', 'Dashboard')
 @section('content')
+ 
     <style>
         .circle {
         width: 79px !important;
