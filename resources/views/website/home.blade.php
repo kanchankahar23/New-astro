@@ -1099,7 +1099,7 @@
                                                                                                     @endforeach
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- <div class="swiper-button-prev"
+                                                                                            <div class="swiper-button-prev"
                                                                                                                                     tabindex="0"
                                                                                                                                     role="button"
                                                                                                                                     aria-label="Previous slide"
@@ -1110,7 +1110,7 @@
                                                                                                                                     role="button"
                                                                                                                                     aria-label="Next slide"
                                                                                                                                     aria-controls="swiper-wrapper-f6593c349f5cafdf">
-                                                                                                                                </div> -->
+                                                                                                                                </div>
                                                                                         </div>
                                                                                         <div class="al-slidr-btn">
                                                                                             <a href="{{ url('/astrologers') }}"
