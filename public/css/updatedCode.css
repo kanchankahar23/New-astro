@@ -67,10 +67,10 @@
 }
 
 
-/* Hide default cursor */
+/* Hide default cursor
 body {
     cursor: none;
-}
+} */
 
 /* Outer circle */
 .cursor-circle {
@@ -201,4 +201,23 @@ body {
 .al-copyright-wrapper{
     background-color: #000000 !important;
 
+}
+.option-buttons button:hover{
+    background-color: #d05606;
+    color: white;
+}
+.option-buttons button{
+    background-color: #4b4b4b;
+}
+.hh2appoint{
+    color: #d05606 !important;
+}
+
+.testimonial123-prev-button:hover{
+background-color: #c24f02;
+color: white;
+}
+.testimonial123-next-button:hover{
+    background-color: #c24f02;
+color: white;
 }
