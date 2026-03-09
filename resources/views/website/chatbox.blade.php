@@ -214,7 +214,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer_parent" id="chatBox-display"
+                            <div class="footer_parent" id="y"
                                 style="display: none;">
 
                                 <div id="plus_button" class="plus_button">
@@ -321,7 +321,7 @@
 
     function getChat(userId){
         $(`.personalChat`).empty();
-       document.querySelector('#chatBox-display').style.display="block";
+       document.querySelector('#y').style.display="block";
         var data = {
             userId,
             _token:"{{ csrf_token() }}"
