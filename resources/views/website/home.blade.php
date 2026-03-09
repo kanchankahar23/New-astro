@@ -1667,7 +1667,7 @@
                                                                                                         <div
                                                                                                             class="al-expert-content">
                                                                                                             <a href="#">
-                                                                                                                <h5>Sagittairus
+                                                                                                                <h5>Sagittarius
                                                                                                                 </h5>
                                                                                                             </a>
                                                                                                             <p>{{
