@@ -242,6 +242,6 @@ body {
 .active-tab:hover {
     background-color: rgb(182, 21, 48);
 }
-
-
-
+.appointfirst h3 hr {
+    background-color: #ff6b08 !important;
+}
