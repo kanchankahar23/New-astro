@@ -4326,7 +4326,7 @@ body{
 .tagline span {
     width: 8px;
     height: 8px;
-    background: #fbe216 !important;
+    /* background: #fbe216 !important; */
     display: inline-block;
     position: relative;
     margin-top: 10px;
