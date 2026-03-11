@@ -803,7 +803,7 @@ body {
     margin: 70px auto;
 }
 .appointfirst h3 hr {
-    background-color: #fbe216 !important;
+    /* background-color: #fbe216 !important; */
     width: 53%;
     margin-left: -3px;
     margin-top: 14px;
