@@ -3460,7 +3460,7 @@ padding-right: 0 !important;
         font-size: 1rem;
         box-shadow: 1px 1px 4px -2px #cccdcf;
         border-radius: 5px;
-        background: #fbe216 !important;
+        /* background: #fbe216 !important; */
         font-family: "Poppins", sans-serif;
     }
 
@@ -7355,7 +7355,7 @@ padding-right: 0 !important;
         font-size: 1rem;
         box-shadow: 1px 1px 4px -2px #cccdcf;
         border-radius: 5px;
-        background: #fbe216 !important;
+        
         font-family: "Poppins", sans-serif;
     }
 
