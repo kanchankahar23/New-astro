@@ -549,8 +549,8 @@
 
 
  <style>
-    .listChangeColor{
-        background-color:yellow;
+    .listChangeColor{   
+        border-top: 3px solid orange;
     }
 
 /* header css  */
