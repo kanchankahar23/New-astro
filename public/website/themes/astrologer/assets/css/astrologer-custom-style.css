@@ -11645,6 +11645,7 @@ h2.al-sub-heading {
     color: grey;
 
 }
+
 .al-slidr-btn {
     text-align: center;
     margin-top: 50px;
@@ -11653,8 +11654,7 @@ h2.al-sub-heading {
 /* testimonial section css end */
 
 /* profile section css start */
-x
-.al-prfle-parent {
+x .al-prfle-parent {
     padding: 40px;
     background: #fff;
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
@@ -13841,8 +13841,8 @@ ul.pagination li .page-numbers:hover {
 
 /* Gaurav Cards Start  */
 
-@media (min-width:500px) {container
-    .our-team {
+@media (min-width:500px) {
+    container .our-team {
         background-image: url('/assets/Zodiac/panditback.webp');
         background-size: cover;
         background-repeat: no-repeat;
