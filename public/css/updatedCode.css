@@ -198,26 +198,50 @@ body {
     text-align: center;
     color: white;
 }
-.al-copyright-wrapper{
+
+.al-copyright-wrapper {
     background-color: #000000 !important;
 
 }
-.option-buttons button:hover{
+
+.option-buttons button:hover {
     background-color: #d05606;
     color: white;
 }
-.option-buttons button{
+
+.option-buttons button {
     background-color: #4b4b4b;
 }
-.hh2appoint{
-    color: #d05606 !important;
+
+.hh2appoint {
+    color: #dfb10b !important;
 }
 
-.testimonial123-prev-button:hover{
-background-color: #c24f02;
-color: white;
-}
-.testimonial123-next-button:hover{
+.testimonial123-prev-button:hover {
     background-color: #c24f02;
-color: white;
+    color: white;
 }
+
+.testimonial123-next-button:hover {
+    background-color: #c24f02;
+    color: white;
+}
+
+.as-sign-box:hover {
+    background-color: linear-gradient(0deg, rgb(253, 127, 9) 0%, rgb(203 74 12) 100%) !important;
+}
+
+.hs_sign_left_tabs_wrapper .hs_slider_tabs_icon_wrapper img {
+    background: #ff6b08 !important;
+}
+
+.active-tab {
+    background-color: rgb(254, 111, 9) !important;
+}
+
+.active-tab:hover {
+    background-color: rgb(182, 21, 48);
+}
+
+
+
