@@ -19,7 +19,7 @@
         <link rel="stylesheet"
             href="{{ asset('website/themes/astrologer/assets/css/astrologer-custom-style.css?ver=1') }}" />
         <!-- <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/freekundli.css') }}" /> -->
-        <link rel="stylesheet" href="{{ asset(path:'website/') }}">
+        <link rel="stylesheet" href="{{ asset(path:'css/updatedCode.css') }}">
         <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/bestastro.css') }}" />
         <link rel="stylesheet"
             href="{{ asset('website/themes/astrologer/assets/css/astrologer-custom-light-style.css?ver=1') }}" />
