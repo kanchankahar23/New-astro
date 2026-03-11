@@ -1171,9 +1171,9 @@ body {
     padding: 0px 10px;
     text-decoration: none;
 }
-.hh2appoint {
-    color: #fbe216 !important;
-}
+/* .hh2appoint { */
+    /* color: #fbe216 !important;
+} */
 .hidden {
     display: none;
 }
@@ -1369,7 +1369,7 @@ body {
     float: left;
     text-align: center;
     line-height: 65px;
-    background: #fbe216 !important;
+    /* background: #fbe216 !important; */
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
