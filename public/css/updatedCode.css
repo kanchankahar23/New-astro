@@ -72,32 +72,6 @@ body {
     cursor: none;
 } */
 
-/* Outer circle */
-.cursor-circle {
-    position: fixed;
-    width: 42px;
-    height: 42px;
-    border: 2px solid #cf5706;
-    /* purple like your site */
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: all 0.12s ease-out;
-    z-index: 99999;
-}
-
-/* Inner dot */
-.cursor-dot {
-    position: fixed;
-    width: 13px;
-    height: 13px;
-    background: #FF7010;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 100000;
-}
-
 
 .rr-appointment-card:hover {
     transform: translateY(-10px);
@@ -246,5 +220,11 @@ body {
     background-color: #ff6b08 !important;
 }
 .tagline span{
-    background-color: #000000 !important;
+    background-color: #ff6b08 !important;
 }
+.makeappointment a button{
+    background-color: #c24f02 !important;
+}
+/* .get-copy-button{
+    background-color: pink;
+} */
