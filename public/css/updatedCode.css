@@ -216,15 +216,45 @@ body {
 .active-tab:hover {
     background-color: rgb(182, 21, 48);
 }
+
 .appointfirst h3 hr {
     background-color: #ff6b08 !important;
 }
-.tagline span{
+
+.tagline span {
     background-color: #ff6b08 !important;
 }
-.makeappointment a button{
-    background-color: #c24f02 !important;
+.makeappointment a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
+
+.makeappointment a button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 320px !important;
+    height: 42px !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    font-size: 1rem !important;
+    box-shadow: 1px 1px 4px -2px #cccdcf !important;
+    border-radius: 5px !important;
+    background-color: #c24f02 !important;
+    font-family: "Poppins", sans-serif !important;
+    transition: all 0.2s ease-in !important;
+
+}
+
+.makeappointment a button:hover {
+    background: #f17725 !important;
+    color: #ffffff !important;
+    transform: scale(1.00) !important;
+}
+
 /* .get-copy-button{
     background-color: pink;
 } */
