@@ -259,3 +259,22 @@ body {
     background-color: #c24f02 !important;
     
 }
+.get-copy-button:hover{
+    background-color: #fc7013 !important;
+    color: white !important;
+}
+
+.homeapp li a{
+    color: #fe8636 !important
+}
+.findcolor{
+    color: #e15c03 !important;
+}
+.kundlilogin button{
+    background-color:#c24f02 !important;
+    color: white !important;
+}
+.kundlilogin button:hover{
+    background-color: #e96309 !important;
+    color: white !important;
+}
