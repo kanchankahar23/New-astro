@@ -5099,22 +5099,22 @@ body {
     width: 140px;
     height: 42px;
     border: none;
-    color: #000000 !important;
+    /* color: #000000 !important; */
     font-weight: 500;
     letter-spacing: 0.5px;
     font-size: 1rem;
-    background: #fbe216 !important;
+    /* background: #fbe216 !important; */
     box-shadow: 1px 1px 4px -2px #cccdcf;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
 }
 
-.kundlilogin button:hover {
+/* .kundlilogin button:hover {
     color: #ffffff !important;
     background: #222222;
     transition: all 0.5s;
     animation: login-making-1 0.3s forwards;
-}
+} */
 
 @keyframes login-making-1 {
     60% {
@@ -5473,10 +5473,10 @@ iframe {
     background-size: cover !important;
     margin-top: -50px;
 }
-
+/* 
 .findcolor {
     color: #fbe216 !important;
-}
+} */
 
 .innerform {
     width: 90%;
