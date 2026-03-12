@@ -255,6 +255,7 @@ body {
     transform: scale(1.00) !important;
 }
 
-/* .get-copy-button{
-    background-color: pink;
-} */
+.get-copy-button{
+    background-color: #c24f02 !important;
+    
+}

@@ -19,7 +19,7 @@
         <link rel="stylesheet"
             href="{{ asset('website/themes/astrologer/assets/css/astrologer-custom-style.css?ver=1') }}" />
         <!-- <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/freekundli.css') }}" /> -->
-        <link rel="stylesheet" href="{{ asset(path:'css/updatedCode.css') }}">
+        <link rel="stylesheet" href="{{ asset(path: 'css/updatedCode.css') }}">
         <link rel="stylesheet" href="{{ asset('website/plugins/astro-appointment/assets/css/bestastro.css') }}" />
         <link rel="stylesheet"
             href="{{ asset('website/themes/astrologer/assets/css/astrologer-custom-light-style.css?ver=1') }}" />
@@ -36,10 +36,54 @@
                 background: linear-gradient(to bottom, #fbe01634 2%, #fbe216 100%);
                 border-color: var(--al-border-color);
             }
+
+            /* Outer circle */
+            .cursor-circle {
+                position: fixed;
+                width: 42px;
+                height: 42px;
+                border: 2px solid #cf5706;
+                /* purple like your site */
+                border-radius: 50%;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: all 0.12s ease-out;
+                z-index: 99999;
+            }
+
+            /* Inner dot */
+            .cursor-dot {
+                position: fixed;
+                width: 13px;
         </style>
+        height: 13px;
+        background: #FF7010;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 100000;
+        }
+        <script>
+            // Create cursor elements
+            const circle = document.createElement('div');
+            const dot = document.createElement('div');
+            circle.classList.add('cursor-circle');
+            dot.classList.add('cursor-dot');
+            document.body.appendChild(circle);
+            document.body.appendChild(dot);
+
+            // Track mouse and move cursor elements
+            document.addEventListener('mousemove', (e) => {
+                circle.style.left = e.clientX + 'px';
+                circle.style.top = e.clientY + 'px';
+                dot.style.left = e.clientX + 'px';
+                dot.style.top = e.clientY + 'px';
+            });
+        </script>
     </head>
 
     <body>
+
         <div class="ast_slider_wrapper" style=" margin-bottom: 0;">
             <div class="astrooverlay"></div>
             <div class="ast_banner_text">

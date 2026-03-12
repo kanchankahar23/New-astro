@@ -130,6 +130,9 @@
                 <div class="ast_wave"></div>
             </div>
             <div class="appointment">
+                  <div class="cursor-circle"></div>
+    <div class="cursor-dot"></div>
+ 
                 <div class="appheading">
                     <h2>Free Numerology</h2>
                 </div>
@@ -242,6 +245,18 @@
     <!--Price End-->
     <script src="https://kit.fontawesome.com/66f2518709.js" crossorigin="anonymous"></script>
     <script src="{{ asset('website/scripts/jquery/jquery.min.js?ver=3.7.1') }}"></script>
+       <script>
+        const circle = document.querySelector('.cursor-circle');
+        const dot = document.querySelector('.cursor-dot');
+
+        document.addEventListener('mousemove', (e) => {
+            dot.style.left = e.clientX + 'px';
+            dot.style.top = e.clientY + 'px';
+
+            circle.style.left = e.clientX + 'px';
+            circle.style.top = e.clientY + 'px';
+        });
+    </script>
 
     <!-- SCRIPTS ENDS -->
 

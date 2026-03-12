@@ -5570,12 +5570,6 @@ iframe {
     font-family: "Poppins", sans-serif;
 }
 
-.makeappointment a button:hover {
-    color: rgba(0, 0, 0, 0.747) !important;
-    background: #222222;
-    transition: all 0.5s;
-    animation: makeappointment-1 0.3s forwards;
-}
 
 @keyframes makeappointment-1 {
     60% {
