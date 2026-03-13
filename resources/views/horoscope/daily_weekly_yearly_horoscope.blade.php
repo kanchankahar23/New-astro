@@ -702,7 +702,10 @@
                             <div class="col-3">
                                 <div class="same">
                                     <div style="border: 1px solid #f4af6e;">
-                                        <select name="" id="periodSelect" onchange="changePeriod()"
+                                        <select name="" id="
+                                        
+                                        
+                    " onchange="changePeriod()"
                                             style="font-size: 0.9rem;font-weight: 600;">
                                             <option style="font-size: 0.9rem; font-weight: 600;" value="daily"
                                                 {{ $report_type === 'daily' ? 'selected' : '' }}>
@@ -845,7 +848,7 @@
                             </div>
                             <div class="col-3 rr-col-3">
                                 <div class="same rr-same">
-                                    <div class="rrr-same" style="border: 1px solid #f4af6e;">
+                                    <div class="rrr-same" >
                                         <select name="" id="periodSelect" onchange="changePeriod()"
                                             style="font-size: 0.9rem;font-weight: 600;">
                                             <option style="font-size: 0.9rem; font-weight: 600;" value="daily"
