@@ -25863,7 +25863,7 @@ a h6:hover {
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus,
-.nice-select .option {
+.s .option {
 	color: var(--tj-black-2);
 }
 /* END: Theme Default CSS */
